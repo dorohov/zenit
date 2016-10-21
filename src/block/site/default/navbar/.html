@@ -1,0 +1,47 @@
+<nav class="navbar {{class}}">	
+	<div class="container-fluid navbar-container-fluid">		
+		<div class="row navbar-row">		
+			<div class="cols navbar-header-cols">
+				<div class="navbar-header">
+					<div class="row navbar-header__row ">
+						<div class="cols navbar-brand__cols">
+							<a class="navbar-brand" href="/">
+								<img src="/img/default/logotip.png" data-rjs="2" class="dark" alt="" >
+							</a>
+						</div>
+				        <div class="cols navbar-hamburger__cols">
+							<button class="hamburger hamburger--emphatic" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+							</button>					
+				        </div>
+
+				    </div>
+				</div>
+			</div>
+			<div class="cols navbar-collapse-cols">
+				<div class="collapse navbar-collapse" id="bs-navbar-collapse">		
+					<div class="row navbar-collapse-row">
+						<div class="cols navbar-nav-cols">
+							<ul class="nav navbar-nav">						
+								<li><a href="/">Главная</a></li>
+								<li><a href="/location.html">Расположение</a></li>
+								<li><a href="/note.html">Описание</a></li>
+								<li><a href="/layouts.html">Планировки квартир</a></li>
+								<li><a href="/faq.html">Вопросы и ответы</a></li>
+								<li><a href="/contacts.html">Контакты</a></li>
+							</ul>
+						</div>	
+						<div class="cols navbar-contacts-cols">
+							<div class="navbar-contacts">
+								<a href="mailto:{{profile.email}}" class="navbar-contacts__item icon-mailto"></a>
+								<a href="#" class="navbar-contacts__item icon-tel" data-toggle="modal" data-target="#modal-message"></a>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,67 @@
+@garamond: 			garamond;
+@georgia:			Georgia, serif;
+@open: 				open-sans-regular;
+@open-italic: 		open-sans-italic;
+@open-light: 		open-sans-light;
+@open-light-italic: open-sans-light-italic;
+@open-bold: 		open-sans-bold;
+@open-ebold: 		open-sans-extra-bold;
+@open-sbold: 		open-sans-semi-bold;
+
+@icon: 				Flaticon;
+.include-custom-font(@family: @din, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{family}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+}
+/*@open*/
+.include-custom-font(@family: @open, 		@weight: normal, @style: normal);
+.include-custom-font(@family: @open-bold, 		@weight: normal, @style: normal);
+.include-custom-font(@family: @open-sbold, 		@weight: normal, @style: normal);
+.include-custom-font(@family: @open-ebold, 		@weight: normal, @style: normal);
+.include-custom-font(@family: @open-italic, 		@weight: normal, @style: normal);
+.include-custom-font(@family: @open-light, 		@weight: normal, @style: normal);
+.include-custom-font(@family: @open-light-italic, 		@weight: normal, @style: normal);
+/*end's @open*/
+.include-custom-icon(@family: @icon, 			@weight: normal, @style: normal);
+
+
+@icon-bricks: 		"\f100";
+@icon-cap: 			"\f101";
+@icon-close: 		"\f102";
+@icon-doc: 			"\f103";
+@icon-fb: 			"\f104";
+@icon-fire: 		"\f105";
+@icon-inst: 		"\f106";
+@icon-left: 		"\f107";
+@icon-lift: 		"\f108";
+@icon-lock: 		"\f109";
+@icon-mailto: 		"\f10a";
+@icon-minus: 		"\f10b";
+@icon-next: 		"\f10c";
+@icon-pages: 		"\f10d";
+@icon-parking: 		"\f10e";
+@icon-pdf: 			"\f10f";
+@icon-plus: 		"\f110";
+@icon-prev: 		"\f111";
+@icon-right: 		"\f112";
+@icon-tel: 			"\f113";
+@icon-transport: 	"\f114";
+@icon-user: 		"\f115";
+@icon-vk: 			"\f116";
+@icon-wall: 		"\f117";
+@icon-window: 		"\f118";
+@icon-xls: 			"\f119";
+@icon-zip: 			"\f11a";

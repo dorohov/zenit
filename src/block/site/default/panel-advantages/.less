@@ -1,0 +1,54 @@
+.panel-advantages{
+	font-family: @open-light;
+	font-size: @b-fs; //18px;
+	line-height: @b-lh; //24px;
+	@media @media-size-sm{
+		padding: 20px 10px 15px 20px;
+	    width: 255px;
+	}
+	@media @media-screen{
+	    width: 255px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding: 20px 10px 15px 20px;
+	}
+	@media @media-size-mdl{
+		width: 225px;
+    	padding: 15px 20px;
+	}
+	@media @media-size-xxl{
+		padding: 30px 10px 15px 20px;
+		position: relative;
+	}
+	.icon{
+		padding: 7px 0px 7px 50px;
+		position: relative;
+		margin-bottom: 18px;
+		@media @media-size-mdl{
+			font-size: @b-fs - 2px;
+			line-height: @b-lh - 2px;
+			padding: 7px 0 7px 40px;
+			margin-bottom: 5px;
+		}
+		&:before{
+			font-family: @icon;
+			color: @yellow;
+			position: absolute;
+			left: 0;
+			font-size: 34px;
+			line-height: 34px;
+			top: 50%;
+			transform: translateY(-50%);
+			@media @media-size-mdl{
+				font-size: 24px;
+				line-height: 24px;
+			}
+		}
+		&.icon-window:before{content: @icon-window}
+		&.icon-wall:before{content: @icon-wall}
+		&.icon-lock:before{content: @icon-lock}
+		&.icon-fire:before{content: @icon-fire}
+		&.icon-lift:before{content: @icon-lift}
+	}
+}

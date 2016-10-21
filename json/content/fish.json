@@ -1,0 +1,28 @@
+{
+	"profile":{
+		"email":"sales@zenit-orel.ru",
+		"phone":"+7 (4862) <span>44-50-60</span>",
+		"phone_tel":"+74862445060",
+		"name":"DevAzbn",
+		"address":"г. Орел, ул. Старо-Московская, 10",
+		"vk":"https://vk.com/zao_zenit",
+		"fb":"https://www.facebook.com/zaozenit/",
+		"instagram":"https://www.instagram.com/zao_zenit/"
+
+	},
+	"house":{
+		"address":"ул. Розы Люксембург, д.33"
+	},
+	"image":{
+		"100x100":"https://placeholdit.imgix.net/~text?txtsize=33&txt=100×100&w=100&h=100",
+		"300x300":"https://placeholdit.imgix.net/~text?txtsize=33&txt=300x300&w=300&h=300",
+		"600x400":"https://placeholdit.imgix.net/~text?txtsize=33&txt=600x400&w=600&h=400",
+		"800x600":"https://placeholdit.imgix.net/~text?txtsize=33&txt=800x600&w=800&h=600",
+		"1024x768":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1024x768&w=1024&h=768",
+		"1280x1024":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1280x1024&w=1280&h=1024",
+		"1366x768":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1366x768&w=1366&h=768",
+		"1600x900":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1600x900&w=1600&h=900",
+		"1920x1080":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x1080&w=1920&h=1080",
+		"1920x1200":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x1200&w=1920&h=1200"
+	}
+}
