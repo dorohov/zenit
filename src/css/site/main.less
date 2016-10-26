@@ -82,11 +82,11 @@ ul{
 				content: '';
 				position: absolute;
 				top: 50%;
-				top: 12px;
+				top: 6px;
 				left: 0px;
 				width: 8px;
 				height: 8px;
-				background: @red;
+				background: @yellow;
 				border-radius: 50%;
 				display: block;   
 				text-align: center; 
@@ -99,11 +99,16 @@ ul{
 .content-site{	
 	@media @media-size-xs{padding: 30px 0 0px;}
 	@media @media-size-sm{padding: 40px 0;}
-	@media @media-screen{padding: 130px 0 100px;}
+	@media @media-screen{padding: 160px 0 100px;}
 	@media @media-size-xxl{padding: 200px 0 120px;}
 }
 .content-inner{
 	@media @media-screen{padding-right: 30px;}
+}
+.contacts-page-content{	
+	.content-site{
+		@media @media-size-mdl{padding: 130px 0 100px;}
+	}
 }
 .note-page-content{	
 	.content-site{	

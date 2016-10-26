@@ -44,3 +44,52 @@ $('._frms__form-control').on('focusin', function(){
 $('._frms__form-control').on('focusout', function(){
 	$(this).parent().removeClass("focus");
 });
+
+$('.building-gallery__owl').owlCarousel({
+	items:3,
+	nav: true,	
+	navText: [],
+	responsive:{
+	   	0:{
+			items: 1,
+			nav: false
+	   	},
+	   	760:{
+			items: 2,
+	   		margin: 25
+	   	},
+	   	1000:{
+			items: 3,
+	   		margin: 25
+	   	},
+	   	1025:{
+	   		margin: 45
+	   	},
+	   	1650:{
+	   		margin: 65
+	   	}
+	}
+});
+$('.building-filter__owl').owlCarousel({
+	margin: 0,
+	items:8,
+	navText: [],
+	nav: false,
+	responsive:{
+	   	0:{
+	   		items:1
+	   	},
+	   	500:{
+	   		items:2
+	   	},
+	   	760:{
+	   		items:4
+	   	},
+	   	1025:{
+	   		items:5
+	   	},
+	   	1400:{
+	   		items:8
+	   	}
+	}
+});

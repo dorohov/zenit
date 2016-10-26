@@ -156,3 +156,43 @@
 		}
 	}*/
 }
+
+.building-gallery__owl{
+	.owl-nav{
+		div{
+			position: absolute;
+			top: 50%;    
+			transition: @transition-site;
+			transform: translateY(-50%);
+			&:before{
+				font-family: @icon;
+				display: block;
+				color: @yellow;
+				text-align: center;
+				font-size: 40px;
+				width: 70px;
+				line-height: 70px;
+				transition: @transition-site;
+			}
+			&:hover{
+				&:before{
+					//opacity: 1;
+					//background: @blue-darken;
+					color: @white;
+				}
+			}
+		}
+		.owl-prev{
+			left: 0px;
+			&:before{
+				content: @icon-prev;
+			}
+		}
+		.owl-next{
+			right: 0px;
+			&:before{
+				content: @icon-next;
+			}
+		}
+	}
+}
