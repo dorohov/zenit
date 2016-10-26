@@ -11,6 +11,18 @@
 				background: linear-gradient(to top, fadeout(@black, 45%) 0%,fadeout(@blue, 90%) 70%,fadeout(@blue, 100%) 100%);
 			}
 		}
+		&.dark{	
+			@media @media-size-sm{
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				left: 0;
+			}		
+			@media @media-size-xs{display: none;}		
+			@media @media-notsmart{
+				background: linear-gradient(to top, fadeout(@black, 20%) 0%,fadeout(@black, 80%) 60%,fadeout(@blue, 100%) 100%);
+			}
+		}
 		@media @media-size-sm{z-index: 100}
 		.container {
 			width: 100%;
@@ -2034,4 +2046,9 @@ textarea._frms__form-control{
 	&:hover{
 		opacity: 0.4;
 	}
+}
+.location-page-content{
+	width: 100%;
+	height: 100%;
+	position: absolute!important;
 }

@@ -31,7 +31,7 @@
 <link href="/css/site.css" rel="stylesheet"> 
 	</head>
 	<body>	
- 		<div class="site-block-fix bg-base-3">
+ 		<div class="site-block-fix">
 	 		<div class="site-inner">
 	 			<nav class="navbar navbar-site">	
 	<div class="container-fluid navbar-container-fluid">		
@@ -81,55 +81,9 @@
 	</div>
 </nav> 
 			
-				<div class="content-block note-page-content">
-	<div class="container-fluid">	 	
-		<div class="content-site">
-			<div class="content-inner">
-				<div class="navbar-note">		
-	<div class="_nbr__block">			
-		<div class="_nbr__item-block">
-			<ul class="navbar-nav-note">				
-				<li><a href="/note.html">Описание</a></li>
-				<li><a href="/architecture.html">Архитектура</a></li>
-				<li><a href="/backlight.html">Подсветка</a></li>
-				<li><a href="/features.html">Особенности</a></li>
-				<li><a href="/parking.html">Экопарковка</a></li>
-				<li><a href="/access.html">Подъезд</a></li>
-				<li><a href="/design-floor.html">Дизайн квартир</a></li>
-				<li><a href="/building.html">Ход строительства</a></li>
-				<li><a href="/docs.html">Документы</a></li>
-			</ul>
-		</div>	
-	</div>
-	<button class="_nbr__btn hamburger hamburger--elastic"   data-toggle-rnav=".navbar-note">
-		<div class="hamburger-box">
-			<div class="hamburger-inner"></div>
-		</div>
-	</button>
-</div> 
-				<div class="panel-advantages panel-bg">
-					<div class="icon icon-wall">Плиточное мощение
-					пешеходных дорожек</div>
-					<div class="icon icon-lock">Закрытая территория</div>
-				</div>
-				<div class="panel-note panel-bg">
-					<div class="scroller" data-mcs-theme="yellow" data-mcs-axis="y">
-						<div class="panel-note__content-inner">
-							<h1 class="heading-site">Особенности</h1>
-							<div class="text-block">
-								<p>Придомовая территория жилого дома закрытая, оборудована системой контроля управления доступа.</p>
-								<p>Благодаря четкому зонированию, во дворе дома создано пространство для пешеходных дорожек, детской площадки. Безопасная яркая игровая детская площадка имеет гигиеническое покрытие из резиновой крошки.</p>
-								<p>Озеленение территории будет производиться декоративными кустарниками и газонной травой.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>			
-	</div>
-</div>
+				<div class="content-block location-page-content" id="map"></div>
 			
-				<footer class="footer-site bg-darken left-navbar">	
+				<footer class="footer-site bg-darken dark ">	
 	<div class="container">
 		<div class="row _fs__row">
 			<div class="cols _fs__copyright-cols">
@@ -236,6 +190,8 @@
 
 <script src="/plugins/jquery.scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="/js/retina.min.js" ></script>
+		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+		<script src="/js/document-ready-2gis-map.js"></script>
 
 	</body>
 </html> 
