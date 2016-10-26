@@ -24,5 +24,59 @@
 		"1600x900":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1600x900&w=1600&h=900",
 		"1920x1080":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x1080&w=1920&h=1080",
 		"1920x1200":"https://placeholdit.imgix.net/~text?txtsize=33&txt=1920x1200&w=1920&h=1200"
+	},
+	"manager":{
+		"item1":{
+			"name": "Волков<br> Александр",
+			"preview": "/img/team/item1.jpg",
+			"post": "Директор по продажам и маркетингу",
+			"tel": "+79202834999",
+			"phone": "+7 (920) 283 49-99",
+			"email": "v485348@yandex.ru",
+			"vk": "https://vk.com/vollkkov",
+			"fb": "#"
+		},
+		"item2":{
+			"name": "Терехина<br> Яна",
+			"preview": "/img/team/item2.jpg",
+			"post": "Менеджер по работе с клиентами",
+			"tel": "+74862445060",
+			"phone": "+7 (4862) 44-50-60",
+			"email": "sales@zenit-orel.ru",
+			"vk": "https://vk.com/id386857342",
+			"fb": "#"
+		},
+		"item3":{
+			"name": "Селеменева<br> Марина",
+			"preview": "/img/team/item3.jpg",
+			"post": "Менеджер по работе с клиентами",
+			"tel": "+74862445060",
+			"phone": "+7 (4862) 44-50-60",
+			"email": "sales@zenit-orel.ru",
+			"vk": "https://vk.com/id386861470",
+			"fb": "#"
+		},
+		"item4":{
+			"name": "Темнова<br> Александра",
+			"preview": "/img/team/item4.jpg",
+			"post": "Менеджер по работе с клиентами",
+			"tel": "+74862445060",
+			"phone": "+7 (4862) 44-50-60",
+			"email": "sales@zenit-orel.ru",
+			"vk": "https://vk.com/id387609554",
+			"fb": "#"
+		},
+		"item5":{
+			"name": "Седова<br> Елена",
+			"preview": "/img/team/item5.jpg",
+			"post": "Менеджер по ипотечному кредитованию",
+			"tel": "+74862445060",
+			"phone": "+7 (4862) 44-50-60",
+			"email": "sales@zenit-orel.ru",
+			"vk": "https://vk.com/id389681227",
+			"fb": "#"
+		}
 	}
 }
+
+

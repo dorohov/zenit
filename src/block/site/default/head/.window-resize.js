@@ -9,11 +9,17 @@ var h_window = $(window).height(),
 	h_content_index = h_window - h_navbar,
 	h_content_scroller = h_window - h_news_block, 
 	h_content_sm = h_window - h_navbar - h_footer, 
+	h_content_sm_lay = h_window - h_navbar, 
 	h_content = h_window - h_navbar - h_footer;
 
 if (device.tablet()) {
 	$('.content-site').css("min-height", h_content_sm);
+	$('.layouts-page-content').css("height", h_content_sm_lay);
 	$("._msp__block .scroller").mCustomScrollbar();
+}
+if (device.mobile()) {
+	$('._fpc__accordion').removeAttr('id');
+} else {
 }
 if (device.mobile() || device.tablet()) {
 	$('.navbar').addClass('navbar-fixed-top');
