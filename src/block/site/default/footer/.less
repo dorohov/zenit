@@ -12,13 +12,13 @@
 			}
 		}
 		&.dark{	
+			@media @media-size-xs{display: none;}	
 			@media @media-size-sm{
 				position: fixed;
 				bottom: 0;
 				width: 100%;
 				left: 0;
-			}		
-			@media @media-size-xs{display: none;}		
+			}			
 			@media @media-notsmart{
 				background: linear-gradient(to top, fadeout(@black, 20%) 0%,fadeout(@black, 80%) 60%,fadeout(@blue, 100%) 100%);
 			}
@@ -54,6 +54,9 @@
 	}
 	&.left-navbar{
 		@media @media-size-xs{padding-left: 40px;}		
+	}
+	&.hidden-xs{
+		@media @media-size-xs{display: none;}
 	}
 	@media @media-size-sm{
 		padding: 20px 0;

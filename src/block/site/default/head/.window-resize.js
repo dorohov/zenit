@@ -19,6 +19,7 @@ if (device.tablet()) {
 }
 if (device.mobile()) {
 	$('._fpc__accordion').removeAttr('id');
+	$('.layouts-page-content').css("height", h_content_index);
 } else {
 }
 if (device.mobile() || device.tablet()) {
