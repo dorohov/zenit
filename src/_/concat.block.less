@@ -1510,9 +1510,10 @@ textarea._frms__form-control{
 	}
 	@media @media-size-xxl{bottom: 68px;}
 	.owl-item{
-		border-left:1px solid @white;
-		&:first-child{border-left:0;}
-		
+		padding-top: 30px;
+		&:first-child{
+			.btn-filter{border-left:0;}	
+		}	
 	}
 }
 .btn-filter{
@@ -1522,9 +1523,23 @@ textarea._frms__form-control{
 	display: block;
     width: 100%;
     padding: 5px 15px;
+	border-left:1px solid @white;
     &.active{		
 		background: @yellow;
 		color: @blue;		
+	}
+}
+.btn-first-month{
+	position: relative;
+	&:before{
+		content: attr(data-year);
+		position: absolute;
+		top: -30px;
+		left: 0;
+		color: @yellow;
+		font-size: @b-fs + 6px;
+		font-family: @open-light;
+	    transform: translateX(-50%);
 	}
 }
 .contacts-page-content{}
