@@ -1,0 +1,96 @@
+.scroll-page{	
+	@top-val: 100px;
+	//opacity: @opacity;
+	@media @media-screen{
+		position: fixed;
+		top: @top-val;
+		top: 0;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		//height: ~"calc(100% - " @top-val ~")"!important;
+		z-index: 1;		
+	}
+}
+@trs-time: 			1s;
+@trs-time-active: 	1s;
+.scroll-page__slide{	
+	@media @media-screen{
+		position: absolute;
+		top: 100%;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		//opacity: 0;
+		z-index: 1;
+		transition: @trs-time-active all ease;
+		.scroll-page[data-slide-id="1"] &[data-slide-id="0"],
+		.scroll-page[data-slide-id="2"] &[data-slide-id="1"]{
+			opacity: 1;
+			z-index: 1;
+			top: 0%;
+			transition: @trs-time-active all ease;
+			//top: -100%;
+			&.active{
+				top: 0%;
+			}
+		}
+		.scroll-page[data-slide-id="3"] &[data-slide-id="3"]{
+			opacity: 1;
+			z-index: 2;
+			top: 0%;
+		}
+		.scroll-page[data-slide-id="3"] &[data-slide-id="2"],
+		.scroll-page[data-slide-id="4"] &[data-slide-id="3"],
+		.scroll-page[data-slide-id="5"] &[data-slide-id="4"],
+		.scroll-page[data-slide-id="6"] &[data-slide-id="5"],
+		.scroll-page[data-slide-id="7"] &[data-slide-id="6"],
+		.scroll-page[data-slide-id="8"] &[data-slide-id="7"],
+		.scroll-page[data-slide-id="9"] &[data-slide-id="8"],
+		.scroll-page[data-slide-id="10"] &[data-slide-id="9"]{
+			opacity: 1;
+			z-index: 1;
+			top: 0%;
+			transition: @trs-time-active all ease; 
+		}
+		&.active{
+			opacity: 1;
+			z-index: 1;
+			top: 0%;
+		}
+		&.inactive-prev{top: -100%;}
+		
+		
+		.page-id-1 .index-page-content.scroll-page &[data-slide-id="0"]{
+			width:50%;
+			left:-50%;
+			z-index: 2 !important;
+			
+			._ipc__slider-left {
+				width:100%;
+			}
+		}
+		.page-id-1 .index-page-content.scroll-page[data-slide-id="0"] &[data-slide-id="0"]{
+			z-index: 2;
+			left:0%;
+		}
+		.page-id-1 .index-page-content.scroll-page[data-slide-id="0"] &[data-slide-id="1"]{
+			top: 0%;
+			z-index: 0;
+		}
+		
+		
+	}
+}
+.design-page-content{
+	.content-inner{
+		@media @media-screen{
+			padding-left: 275px;
+		}
+	}
+}
+.twentytwenty-container{
+	img{
+		height: 600px;
+	}
+}

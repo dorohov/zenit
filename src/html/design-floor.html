@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		[[azbntple tpl="/src/block/site/default/head/.html" ]] 
+	</head>
+	<body>	
+ 		<div class="site-block-fix">
+	 		<div class="site-inner">
+	 			[[azbntple tpl="/src/block/site/default/navbar/.html" class="navbar-site" ]] 
+			
+				[[azbntple tpl="/src/block/site/page/design-floor/.html" class="design-page-content" ]]
+			
+				[[azbntple tpl="/src/block/site/default/footer/.html" class="footer-site bg-darken left-navbar" ]] 	
+
+	 		</div>
+ 		</div>
+		[[azbntple tpl="/src/block/site/default/modals/call.html" ]]
+		[[azbntple tpl="/src/block/site/default/modals/message.html" ]]
+		
+			
+		[[azbntple tpl="/src/block/site/default/head/script.html" ]]
+		<script src="/js/azbn.wheel.js"></script>
+		<link rel="stylesheet" type="text/css" href="/plugins/twentytwenty/css/twentytwenty.css">
+		<script src="/plugins/twentytwenty/js/jquery.event.move.js"></script>
+		<script src="/plugins/twentytwenty/js/jquery.twentytwenty.js"></script>
+		 <script>
+			$(window).load(function(){
+  				$(".twentytwenty-container").twentytwenty();
+			})
+		</script>
+	</body>
+</html> 
