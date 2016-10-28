@@ -2,15 +2,16 @@
 <html dir="ltr" lang="ru-RU"> 
 	<head>
 		[[azbntple tpl="/src/block/site/default/head/.html" ]] 
+		<link href="/css/animate.min.css" rel="stylesheet">
 	</head>
 	<body>	
  		<div class="site-block-fix bg-base-0">
 	 		<div class="site-inner">
-	 			[[azbntple tpl="/src/block/site/default/navbar/.html" class="navbar-site" ]] 
+	 			[[azbntple tpl="/src/block/site/default/navbar/.html" class="navbar-site wow slideInDown" ]] 
 			
-				[[azbntple tpl="/src/block/site/page/index/.html" class="content-block index-page-content" ]]
+				[[azbntple tpl="/src/block/site/page/index/.html" class="content-block index-page-content wow slideInLeft" ]]
 			
-				[[azbntple tpl="/src/block/site/default/footer/.html" class="footer-site" ]] 	
+				[[azbntple tpl="/src/block/site/default/footer/.html" class="footer-site wow slideInUp" ]] 	
 
 	 		</div>
  		</div>
@@ -19,6 +20,8 @@
 		
 			
 		[[azbntple tpl="/src/block/site/default/head/script.html" ]]
+
+		<script src="/js/wow.min.js" ></script>
 
 	</body>
 </html> 

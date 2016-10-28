@@ -42,6 +42,7 @@ if (device.mobile() || device.tablet()) {
 } else {
 	$('.content-site').css("height", h_content_scroller);
 	$(".scroller").mCustomScrollbar();
+	new WOW().init();
 }
 $(".navbar-fixed-top").autoHidingNavbar();
 $('.news-item__preview a').css("height", w_news_preview);
