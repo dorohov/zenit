@@ -104,24 +104,69 @@
 		</div>
 	</button>
 </div> 
+	<div class="_dpc__panel-note">
+		<h1 class="_dpc__panel-note__heading">Типовой дизайн квартир</h1>
+		<div>Вы можете заказать индивидуальный дизайн картир.</div>
+		<div class="_dpc__panel-note__btn"><a href="/contacts.html">Подробности у менеджеров</a></div>
+	</div>
 	<div class="index-page-slide scroll-page__slide active bg-base-7 bg-base-blue" data-slide-id="0">
  		<div class="site-inner">
 			<div class="container-fluid">	 	
 				<div class="content-site">
 					<div class="content-inner">
-						<div class="twentytwenty-container">
-							<img src="/img/design-floor/item2-before.png" />
-							<img src="/img/design-floor/item2-after.png" />
+						<div class="twentytwenty-container floor-one">
+							<img src="/img/design-floor/item1-before.png" />
+							<img src="/img/design-floor/item1-after.png" />
+						</div> 
+						<div class="_dpc__panel-info">
+							<div class="_num">1</div>
+							<div>комната</div>
+							<div>49.28 м<sup>2</sup></div>
+							<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на просмотр</button></div>
 						</div>
  					</div>
  				</div>
  			</div>
  		</div>
 	</div>
-
 	<div class="index-page-slide scroll-page__slide bg-base-7 bg-base-blue" data-slide-id="1">
  		<div class="site-inner">
-
+			<div class="container-fluid">	 	
+				<div class="content-site">
+					<div class="content-inner">
+						<div class="twentytwenty-container floor-two">
+							<img src="/img/design-floor/item2-before.png" />
+							<img src="/img/design-floor/item2-after.png" />
+						</div> 
+						<div class="_dpc__panel-info">
+							<div class="_num">2</div>
+							<div>комнаты</div>
+							<div>67.89 м<sup>2</sup></div>
+							<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на просмотр</button></div>
+						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+	</div>
+	<div class="index-page-slide scroll-page__slide bg-base-7 bg-base-blue" data-slide-id="2">
+ 		<div class="site-inner">
+			<div class="container-fluid">	 	
+				<div class="content-site">
+					<div class="content-inner">
+						<div class="twentytwenty-container floor-three">
+							<img src="/img/design-floor/item3-before.png" />
+							<img src="/img/design-floor/item3-after.png" />
+						</div> 
+						<div class="_dpc__panel-info">
+							<div class="_num">3</div>
+							<div>комнаты</div>
+							<div>90.86 м<sup>2</sup></div>
+							<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на просмотр</button></div>
+						</div>
+ 					</div>
+ 				</div>
+ 			</div>
  		</div>
 	</div>
 </div>
@@ -192,19 +237,30 @@
 		</div>
 	</div>
 </div>  
-		<div class="modal fade" id="modal-message" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog _msc__dialog">
 		<div class="modal-content _msc__content">
 			<div class="modal-body _msc__body" >
 				<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true"></button>
-				<div class="modal-block">		
-					<h3 class="modal-title _msm__title">Ваша заявка принята. <br>Спасибо!</h3>
-					<div>Мы свяжимся с Вами в ближайшее время!</div>
-				</div> 
+				<div class="modal-block _msc__block">		
+					<h3 class="modal-title">Заявка</h3>
+					<div class="">на просмотр</div>			
+					<form action="#" class="form-site _msc__form">
+	<div class="_frms__input icon icon-user">
+		<input type="text" class="_frms__form-control form-control validate[required]" id="" placeholder="Ваше имя">
+	</div>	
+	<div class="_frms__input icon icon-tel">
+		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="" placeholder="Ваш телефон">
+	</div>	
+	<div class="_frms__input _msc__form-btn">
+		<button type="submit" class="btn-site btn-blue">Отправить</button>
+	</div>	
+</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</div>  
 		
 			
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

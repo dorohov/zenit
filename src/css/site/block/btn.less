@@ -65,6 +65,25 @@
 		}
 	}
 }
+.btn-white-line{
+	border: 1px solid @white;
+	color: @white;
+	font-size: @b-fs + 4px; //20px
+	line-height: @b-lh + 10px; //30px;
+	font-family: @open;
+	position: relative;
+	text-align: center;
+	padding: 15px 20px;
+	&:hover{
+		background: @white;
+		color: @blue;
+	}
+	@media @media-size-xs {
+		font-size: @b-fs; //20px
+		line-height: @b-lh + 10px; //30px;
+
+	}
+}
 
 /*
 .btn-azure-arrow{
@@ -122,20 +141,6 @@
     padding: 20px 65px;
     font-size: @b-fs;
     line-height: @b-lh - 10px;
-}
-.btn-red-line{
-	border: 3px solid @red;
-	color: @black;
-	font-size: @b-fs - 4px;
-	text-transform: uppercase;
-	font-family: @din-bold;
-	position: relative;
-	text-align: center;
-	padding: 10px 80px;
-	&:hover{
-		background: @red;
-		color: @white;
-	}
 }
 .btn-mailto{
 	padding: 10px 20px 10px 55px;

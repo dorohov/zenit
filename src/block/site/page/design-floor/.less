@@ -78,19 +78,182 @@
 			top: 0%;
 			z-index: 0;
 		}
-		
-		
 	}
 }
 .design-page-content{
+	background: @blue;
 	.content-inner{
+		position: relative;
+		@media @media-size-xs{padding-left: 40px;}
+		@media @media-size-sm{padding-left: 100px;}
 		@media @media-screen{
-			padding-left: 275px;
+			padding-left: 300px;
+			padding-right: 300px;
 		}
 	}
 }
+.index-page-slide{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 .twentytwenty-container{
+	&.floor-one{
+		margin: 0 auto;
+		@media @media-size-xs-l{width: 210px;}
+		@media @media-size-sm-p{width: 410px;}
+		@media @media-size-sm-l{width: 290px;}
+		@media @media-size-mdl{width: 270px;}
+		@media @media-size-xl{width: 370px;}
+		@media @media-size-xxl{width: 490px;}
+	}
+	&.floor-two{
+		margin: 0 auto;
+		@media @media-size-xs-l{width: 270px;}
+		@media @media-size-sm-p{width: 540px;}
+		@media @media-size-sm-l{width: 380px;}
+		@media @media-size-mdl{width: 360px;}
+		@media @media-size-xl{width: 490px;}
+		@media @media-size-xxl{width: 650px;}
+	}
+	&.floor-three{
+		margin: 0 auto;
+		@media @media-size-xs-l{width: 185px;}
+		@media @media-size-sm-p{width: 370px;}
+		@media @media-size-sm-l{width: 260px;}
+		@media @media-size-mdl{width: 250px;}
+		@media @media-size-xl{width: 340px;}
+		@media @media-size-xxl{width: 415px;}
+	}
 	img{
-		height: 600px;
+		@media @media-size-xs-l{height: 250px;}
+		@media @media-size-sm-p{height: 500px;}
+		@media @media-size-sm-l{height: 350px;}
+		@media @media-size-mdl{height: 330px;}
+		@media @media-size-xl{height: 450px;}
+		@media @media-size-xxl{height: 600px;}
+	}
+}
+._dpc__panel-info{
+	padding: 20px;
+	text-align: center;
+	font-family: @garamond;
+	@media @media-device{padding-top: 40px;}
+	@media @media-size-xs{
+		font-size: 24px;
+		line-height: 30px;
+	}
+	@media @media-size-sm{
+		font-size: 34px;
+		line-height: 40px;
+	}
+	@media @media-screen{
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 300px;	
+		font-size: 56px;
+		line-height: 62px;	
+	}
+	@media @media-size-mdl{
+		font-size: 44px;
+		line-height: 50px;
+	}
+	@media @media-size-xl{
+		font-size: 54px;
+		line-height: 60px;
+	}
+	._num{
+		font-size: 150px;
+		line-height: 120px;
+		@media @media-size-xs{
+			font-size: 50px;
+			line-height: 30px;
+		}
+		@media @media-size-sm{
+			font-size: 70px;
+			line-height: 50px;
+		}
+		@media @media-size-mdl{
+			font-size: 100px;
+			line-height: 80px;
+		}
+		@media @media-size-xl{
+			font-size: 120px;
+			line-height: 100px;
+		}
+	}
+	div{
+		margin-bottom: 20px;
+		@media @media-device{margin-bottom: 10px;}
+		@media @media-size-mdl{margin-bottom: 15px;}
+	}
+}
+._dpc__panel-note{
+	font-family: @open-bold;
+	font-size: @b-fs + 4px;  // 20px;
+	line-height: @b-lh + 4px; //24px;	
+	@media @media-device{
+		text-align: center;
+	}
+	@media @media-size-xs {
+		padding: 20px 20px 30px 60px;
+		font-size: @b-fs;  // 20px;
+		line-height: @b-lh; //24px;
+	}
+	@media @media-size-sm {padding: 20px 0 20px 100px;}
+	@media @media-screen{
+		position: fixed;
+		top: 590px;
+		z-index: 10;
+		left: 70px;
+		width: 255px;
+	}
+	@media @media-size-mdl{
+		width: 190px;
+	    top: 160px;
+    	left: 290px;
+		font-size: @b-fs - 2px;  // 20px;
+		line-height: @b-lh - 2px; //24px;	
+	}
+	@media @media-size-xl{
+		width: 300px;
+		top: 535px;
+		font-size: @b-fs;  // 20px;
+		line-height: @b-lh; //24px;	
+	}
+}
+._dpc__panel-note__heading{
+	font-family: @open-light;
+	font-size: @b-fs + 12px; //30px;
+	line-height: @b-lh + 16px; //36px;
+	@media @media-size-xs {
+		font-size: @b-fs + 4px; //30px;
+		line-height: @b-lh + 6px; //36px;
+	}
+	@media @media-size-mdl{
+		font-size: @b-fs + 6px; //30px;
+		line-height: @b-lh + 8px; //36px;
+	}
+	@media @media-size-xl{
+		font-size: @b-fs + 8px; //30px;
+		line-height: @b-lh + 10px; //36px;
+	}
+}
+._dpc__panel-note__btn{
+	padding-top: 20px;
+	font-size: @b-fs;
+	@media @media-size-mdl{		
+		font-size: @b-fs - 2px;  // 20px;
+		line-height: @b-lh - 2px; //24px;	
+	}
+	a{
+		&, &:hover, &:focus{color: @white}
+		border-bottom: 2px solid fadeout(@white, 0%);
+		transition: @transition-site;
+		&:hover{
+			border-bottom-color: fadeout(@white, 100%);
+		}
 	}
 }

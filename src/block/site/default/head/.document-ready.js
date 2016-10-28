@@ -89,7 +89,7 @@ $('.building-filter__owl').owlCarousel({
 	   		items:5
 	   	},
 	   	1400:{
-	   		items:8
+	   		items:7
 	   	}
 	}
 });
