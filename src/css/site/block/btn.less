@@ -84,7 +84,46 @@
 
 	}
 }
-
+.btn-back{
+	font-family: @open-bold;
+	font-size: @b-fs + 2px; //18px
+	line-height: @b-lh + 4px; //24px;
+	text-transform: uppercase;
+	padding-left: 15px;
+	position: relative;
+	&:before{
+		font-family: @icon;
+		content: @icon-prev;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		font-size: @b-fs - 4px; //12px
+		transition: @transition-site;
+	}
+	&, &:hover, &:focus{color: @white;}
+	&:hover{
+		&:before{			
+			transform: translate(-5px, -50%);
+		}
+	}
+}
+.btn-design{
+	color: @white;
+	border: 1px solid @white;
+	background-image: url('@{url-path-img}/bg/bg-btn.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 30px;
+	font-family: @open-light;
+	font-size: @b-fs + 8px; //24px
+	line-height: @b-lh; //20px;
+	&:hover{
+		background-color: @white;
+		background-position: 50% -100%;
+		color: @blue;
+	}
+}
 /*
 .btn-azure-arrow{
 	background: @azure;
