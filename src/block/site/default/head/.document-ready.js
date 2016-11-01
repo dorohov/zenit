@@ -47,6 +47,7 @@ $('._frms__form-control').on('focusout', function(){
 
 $('.building-gallery__owl').owlCarousel({
 	items:3,
+	//slideBy:1,
 	nav: true,	
 	navText: [],
 	responsive:{
@@ -73,6 +74,7 @@ $('.building-gallery__owl').owlCarousel({
 $('.building-filter__owl').owlCarousel({
 	margin: 0,
 	items:8,
+	//slideBy:1,
 	navText: [],
 	nav: false,
 	responsive:{
