@@ -2639,7 +2639,24 @@ textarea._frms__form-control{
 	width: 100%;
 } 
 ._lrpc__oneroom{
-	img{margin: 0 auto;}
+	margin-bottom: 25px;
+	@media @media-device{
+		img{margin: 0 auto;}
+	}
+}
+._lrpc__room-btn{
+	@media @media-size-xs{
+		max-width: 190px;
+		margin: 0 auto; 
+		.btn-yellow-bg-line{margin-top: 20px;}
+	}
+	@media @media-size-sm{
+		max-width: 437px;
+		margin: 0 auto; 
+	}
+	@media @media-notsmart{
+		.btn-yellow-bg-line{margin-left: 28px;}
+	}
 }
 .location-page-content{
 	width: 100%;
