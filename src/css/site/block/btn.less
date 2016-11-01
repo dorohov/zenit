@@ -118,6 +118,17 @@
 	font-family: @open-light;
 	font-size: @b-fs + 8px; //24px
 	line-height: @b-lh; //20px;
+	@media @media-size-xs{
+		padding: 20px;
+		font-size: @b-fs + 4px; //20px
+	}
+	@media @media-size-mdl{
+		font-size: @b-fs + 4px;
+		padding: 20px;
+	}
+	@media @media-size-xl{
+		font-size: @b-fs + 6px;
+	}
 	&:hover{
 		background-color: @white;
 		background-position: 50% -100%;
