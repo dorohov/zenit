@@ -1,3 +1,69 @@
+
+(function(){
+	
+	$(document.body).on('azbn.own.init', null, {}, function(event){
+		event.preventDefault();
+		
+		if($('.building-gallery__owl').length) {
+			$('.building-gallery__owl').owlCarousel({
+				items:3,
+				//slideBy:1,
+				nav: true,	
+				navText: [],
+				responsive:{
+					0:{
+						items: 1,
+						nav: false
+					},
+					760:{
+						items: 2,
+						margin: 25
+					},
+					1000:{
+						items: 3,
+						margin: 25
+					},
+					1025:{
+						margin: 45
+					},
+					1650:{
+						margin: 65
+					}
+				}
+			});
+		}
+		
+		if($('.building-filter__owl').length) {
+			$('.building-filter__owl').owlCarousel({
+				margin: 0,
+				items:8,
+				//slideBy:1,
+				navText: [],
+				nav: false,
+				responsive:{
+					0:{
+						items:1
+					},
+					500:{
+						items:2
+					},
+					760:{
+						items:4
+					},
+					1025:{
+						items:5
+					},
+					1400:{
+						items:7
+					}
+				}
+			});
+		}
+		
+	});
+	
+})();
+
 $('img').addClass('img-responsive');
 $('.text-block ul').addClass('ul-site');
 $('#ninja-slider ul').removeAttr('class');
@@ -45,53 +111,4 @@ $('._frms__form-control').on('focusout', function(){
 	$(this).parent().removeClass("focus");
 });
 
-$('.building-gallery__owl').owlCarousel({
-	items:3,
-	//slideBy:1,
-	nav: true,	
-	navText: [],
-	responsive:{
-	   	0:{
-			items: 1,
-			nav: false
-	   	},
-	   	760:{
-			items: 2,
-	   		margin: 25
-	   	},
-	   	1000:{
-			items: 3,
-	   		margin: 25
-	   	},
-	   	1025:{
-	   		margin: 45
-	   	},
-	   	1650:{
-	   		margin: 65
-	   	}
-	}
-});
-$('.building-filter__owl').owlCarousel({
-	margin: 0,
-	items:8,
-	//slideBy:1,
-	navText: [],
-	nav: false,
-	responsive:{
-	   	0:{
-	   		items:1
-	   	},
-	   	500:{
-	   		items:2
-	   	},
-	   	760:{
-	   		items:4
-	   	},
-	   	1025:{
-	   		items:5
-	   	},
-	   	1400:{
-	   		items:7
-	   	}
-	}
-});
+$(document.body).trigger('azbn.own.init');
