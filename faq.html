@@ -46,9 +46,9 @@
 						</div>
 				        <div class="cols navbar-hamburger__cols">
 							<button class="hamburger hamburger--emphatic" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
-								</div>
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
 							</button>					
 				        </div>
 
@@ -148,13 +148,13 @@
 						<div>Заполните форму и мы ответим Вам в ближайшее время.</div>
 						<form action="#" class="form-site _fpc__form">
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="" placeholder="Ваше имя">
+		<input type="text" class="_frms__form-control form-control validate[required]" id="f[b_name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="" placeholder="Ваш телефон">
+		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[b_phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__textarea">
-		<textarea class="_frms__form-control form-control validate[required]" placeholder="Ваш вопрос"></textarea>
+		<textarea class="_frms__form-control form-control validate[required]" placeholder="Ваш вопрос" id="f[b_note]"></textarea>
 	</div>	
 	<div class="_frms__input">
 		<button type="submit" class="btn-site btn-yellow">Отправить</button>
@@ -219,10 +219,10 @@
 					<div class="">обратный звонок</div>			
 					<form action="#" class="form-site _msc__form">
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="" placeholder="Ваше имя">
+		<input type="text" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="" placeholder="Ваш телефон">
+		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Перезвоните мне</button>
@@ -269,8 +269,8 @@
 <script src="/plugins/fancybox/source/jquery.fancybox.min.js"></script>
 <script src="/plugins/fancybox/source/helpers/jquery.fancybox-buttons.min.js"></script>
 
-<script src="/js/jquery.validationEngine-ru.js" ></script>
-<script src="/js/jquery.validationEngine.js" ></script>
+<script src="/js/jquery.validationEngine-ru.min.js" ></script>
+<script src="/js/jquery.validationEngine.min.js" ></script>
 
 <script src="/plugins/jquery.scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="/js/retina.min.js" ></script>

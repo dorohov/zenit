@@ -46,9 +46,9 @@
 						</div>
 				        <div class="cols navbar-hamburger__cols">
 							<button class="hamburger hamburger--emphatic" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false" data-toggle-nav=".navbar-site">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
-								</div>
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
 							</button>					
 				        </div>
 
@@ -189,10 +189,10 @@
 					<div class="">обратный звонок</div>			
 					<form action="#" class="form-site _msc__form">
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="" placeholder="Ваше имя">
+		<input type="text" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="" placeholder="Ваш телефон">
+		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Перезвоните мне</button>
@@ -216,6 +216,30 @@
 		</div>
 	</div>
 </div>
+		<div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog _msc__dialog">
+		<div class="modal-content _msc__content">
+			<div class="modal-body _msc__body" >
+				<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true"></button>
+				<div class="modal-block _msc__block">		
+					<h3 class="modal-title">Заявка</h3>
+					<div class="">на просмотр</div>			
+					<form action="#" class="form-site _msc__form">
+	<div class="_frms__input icon icon-user">
+		<input type="text" class="_frms__form-control form-control validate[required]" id="fo[name]" placeholder="Ваше имя">
+	</div>	
+	<div class="_frms__input icon icon-tel">
+		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="fo[phone]" placeholder="Ваш телефон">
+	</div>	
+	<div class="_frms__input _msc__form-btn">
+		<button type="submit" class="btn-site btn-blue">Отправить</button>
+	</div>	
+</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>  
 		
 			
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -239,8 +263,8 @@
 <script src="/plugins/fancybox/source/jquery.fancybox.min.js"></script>
 <script src="/plugins/fancybox/source/helpers/jquery.fancybox-buttons.min.js"></script>
 
-<script src="/js/jquery.validationEngine-ru.js" ></script>
-<script src="/js/jquery.validationEngine.js" ></script>
+<script src="/js/jquery.validationEngine-ru.min.js" ></script>
+<script src="/js/jquery.validationEngine.min.js" ></script>
 
 <script src="/plugins/jquery.scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="/js/retina.min.js" ></script>

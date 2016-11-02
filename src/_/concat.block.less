@@ -2007,6 +2007,7 @@ textarea._frms__form-control{
 	height: 356px;
 	@media @media-size-xs{height: auto; min-height: 200px; padding: 35px 30px}
 	@media @media-size-mdl{height: 336px;}
+	> div{width: 100%;} 
 }
 .docs-item__heading{
 	display: block;
@@ -2071,16 +2072,18 @@ textarea._frms__form-control{
 	@media @media-device{flex-wrap: wrap;}
 }
 ._fpc__content-cols{
+	flex-basis: 73%;
 	width: 73%;
-	@media @media-device{width: 100%; margin-bottom: 35px}
-	@media @media-size-mdl{width: 65%;}
-	@media @media-size-xl{width: 70%;}
+	@media @media-device{flex-basis: 100%; width: 100%; margin-bottom: 35px}
+	@media @media-size-mdl{flex-basis: 65%; width: 65%;}
+	@media @media-size-xl{flex-basis: 70%; width: 70%;}
 }
 ._fpc__reviews-cols{
+	flex-basis: 27%;
 	width: 27%;
-	@media @media-device{width: 100%;}
-	@media @media-size-mdl{width: 35%;}
-	@media @media-size-xl{width: 30%;}
+	@media @media-device{flex-basis: 100%; width: 100%;}
+	@media @media-size-mdl{flex-basis: 35%; width: 35%;}
+	@media @media-size-xl{flex-basis: 30%; width: 30%;}
 }
 
 ._fpc__form-block{
@@ -2130,6 +2133,7 @@ textarea._frms__form-control{
 }
 ._fpc__accordion{
 	padding-top: 25px;
+	width: 100%;
 	@media @media-size-xs {padding-top: 5px;}
 	@media @media-size-lg {padding-top: 10px;}
 }

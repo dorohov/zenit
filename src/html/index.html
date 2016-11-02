@@ -23,7 +23,11 @@
 
 		<script src="/js/wow.min.js" ></script>
 		<script>
-			new WOW().init();
+			if (device.mobile() || device.tablet()) {
+			
+			} else {
+				new WOW().init();
+			}
 		</script>
 
 	</body>
