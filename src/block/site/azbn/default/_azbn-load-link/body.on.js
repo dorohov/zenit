@@ -6,6 +6,8 @@
 		$('._msp__block .scroller').mCustomScrollbar();
 		$('.scroller').mCustomScrollbar();
 		
+		$('.twentytwenty-container').twentytwenty();
+		
 		$(document.body).trigger('azbn.own.init');
 		
 		$(window).trigger('resize');
