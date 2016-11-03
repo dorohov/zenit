@@ -67,7 +67,7 @@ $floor_name = $floor['id'] - 283;
 								<li><a href="./note.html">Описание</a></li>
 								<li><a href="./layouts.html">Планировки квартир</a></li>
 								<li><a href="./location.html">Расположение</a></li>
-								<li><a href="./faq.html">Вопросы и ответы</a></li>
+								<!--<li><a href="./faq.html">Вопросы и ответы</a></li>-->
 								<li><a href="./contacts.html">Контакты</a></li>
 							</ul>
 						</div>	
@@ -104,8 +104,8 @@ $floor_name = $floor['id'] - 283;
 						<div class="cols _lrpc__floor">
 							<div class="_lrpc__floor-inner">
 								<div id="apart" name="apart" class="_lrpc__floor-apart">
-									<div class="_lrpc__floor-box" style="background-image: url('<?=$floor['bigimg']?>'); background-repeat: no-repeat; min-height:350px;">
-	 									<img src="<?=$floor['bigimg']?>" id="floorimg" usemap="#floorMap" style="position: absolute;">
+									<div class="_lrpc__floor-box" style="background-image: url('http://zenit-orel.ru/image/floor/<?=$floor['bigimg']?>'); background-repeat: no-repeat; min-height:350px;">
+	 									<img src="http://zenit-orel.ru/image/floor/<?=$floor['bigimg']?>" id="floorimg" usemap="#floorMap" style="position: absolute;">
 										<map class="imap" id="floorMap" name="floorMap" data-base-url="room.php?room_id=" ><!-- data-base-url="/json/content/room.json?room_id=" -->
 											<?
 											$_r = array();
@@ -113,7 +113,7 @@ $floor_name = $floor['id'] - 283;
 												foreach($floor['rooms'] as $r) {
 													$_r = $r;
 											?>
-											<area href="#apart" shape="poly" coords="<?=$r['data']?>" data-room-id="<?=$r['id']?>" data-floor-img="<?=$r['img']?>" >
+											<area href="#apart" shape="poly" coords="<?=$r['data']?>" data-room-id="<?=$r['id']?>" data-floor-img="http://zenit-orel.ru/image/floor/<?=$r['img']?>" >
 											<?
 												}
 											}
@@ -139,17 +139,17 @@ $floor_name = $floor['id'] - 283;
 						</div>
 						<div class="cols _lrpc__room">
 							<div id="oneroom" class="_lrpc__oneroom azbn-room-view-img">
-								<a href="<?=$_r['img'];?>" title=""><img src="<?=$_r['bigimg'];?>"></a>
+								<a href="http://zenit-orel.ru/image/floor/<?=$_r['img'];?>" title=""><img src="http://zenit-orel.ru/image/floor/<?=$_r['bigimg'];?>"></a>
 							</div>
 							<div class="_lrpc__room-btn azbn-room-view-print ">
-								<a href="./pdf.php?id=0" class="btn-site btn-white-line small azbn-as-print">Версия для печати</a>
-								<!-- <a href="./pdf.php?id=0&save=1" class="btn-site btn-yellow-bg-line  azbn-as-pdf"><span>Сохранить в PDF</span></a> -->
+								<a href="./../pdf.php?id=0" class="btn-site btn-white-line small azbn-as-print" target="_blank" >Версия для печати</a>
+								<!-- <a href="./../pdf.php?id=0&save=1" class="btn-site btn-yellow-bg-line  azbn-as-pdf"><span>Сохранить в PDF</span></a> -->
 							</div>
 						</div>
 						<div class="cols _lrpc__info">
 							<div class="_dpc__panel-info _lrpc__panel-info azbn-room-view-info">
 								<div class="_num azbn-roomcount"></div>
-								<div>комната</div>
+								<div>комнат<span class="azbn-roomspace-suffix" >a</span></div>
 								<div><span class="azbn-roomspace" ></span> м<sup>2</sup></div>
 								<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на просмотр</button></div>
 							</div>
@@ -214,12 +214,13 @@ $floor_name = $floor['id'] - 283;
 				<div class="modal-block _msc__block">		
 					<h3 class="modal-title">Закажите</h3>
 					<div class="">обратный звонок</div>			
-					<form action="#" class="form-site _msc__form">
+					<form action="./formsave.php" method="POST" class="form-site azbn-form _msc__form">
+	<input type="hidden" name="f[Источник]" value="Форма заявки на обратный звонок" />
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
+		<input type="text" name="f[Имя]" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
+		<input type="tel" name="f[Телефон]" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Перезвоните мне</button>
@@ -251,12 +252,13 @@ $floor_name = $floor['id'] - 283;
 				<div class="modal-block _msc__block">		
 					<h3 class="modal-title">Заявка</h3>
 					<div class="">на просмотр</div>			
-					<form action="#" class="form-site _msc__form">
+					<form action="./formsave.php" method="POST" class="form-site azbn-form _msc__form">
+	<input type="hidden" name="f[Источник]" value="Форма заявки на просмотр" />
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="fo[name]" placeholder="Ваше имя">
+		<input type="text" name="f[Имя]" class="_frms__form-control form-control validate[required]" id="fo[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="fo[phone]" placeholder="Ваш телефон">
+		<input type="tel" name="f[Телефон]" class="_frms__form-control form-control validate[required,custom[phone]]"  id="fo[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Отправить</button>
@@ -266,7 +268,7 @@ $floor_name = $floor['id'] - 283;
 			</div>
 		</div>
 	</div>
-</div>  
+</div>   
 		
 			
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

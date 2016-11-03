@@ -64,7 +64,7 @@
 								<li><a href="./note.html">Описание</a></li>
 								<li><a href="./layouts.html">Планировки квартир</a></li>
 								<li><a href="./location.html">Расположение</a></li>
-								<li><a href="./faq.html">Вопросы и ответы</a></li>
+								<!--<li><a href="./faq.html">Вопросы и ответы</a></li>-->
 								<li><a href="./contacts.html">Контакты</a></li>
 							</ul>
 						</div>	
@@ -90,7 +90,7 @@
 					<div class="_cpc__row row">
 						<div class="_cpc__cols cols">
 							<div class="team-item">
-								<div class="team-item__preview"><img src="/img/team/item1.jpg" alt=""></div>
+								<div class="team-item__preview"><img src="./img/team/item1.jpg" alt=""></div>
 								<h3 class="team-item__heading">Волков<br> Александр</h3>
 								<div class="team-item__post">Директор по продажам и маркетингу</div>
 								<div class="team-item__cont icon-tel"><a href="tel:+79202834999">+7 (920) 283 49-99</a></div>
@@ -105,7 +105,7 @@
 						</div>
 						<div class="_cpc__cols cols">
 							<div class="team-item">
-								<div class="team-item__preview"><img src="/img/team/item2.jpg" alt=""></div>
+								<div class="team-item__preview"><img src="./img/team/item2.jpg" alt=""></div>
 								<h3 class="team-item__heading">Терехина<br> Яна</h3>
 								<div class="team-item__post">Менеджер по работе с клиентами</div>
 								<div class="team-item__cont icon-tel"><a href="tel:+74862445060">+7 (4862) 44-50-60</a></div>
@@ -120,7 +120,7 @@
 						</div>
 						<div class="_cpc__cols cols">
 							<div class="team-item">
-								<div class="team-item__preview"><img src="/img/team/item3.jpg" alt=""></div>
+								<div class="team-item__preview"><img src="./img/team/item3.jpg" alt=""></div>
 								<h3 class="team-item__heading">Селеменева<br> Марина</h3>
 								<div class="team-item__post">Менеджер по работе с клиентами</div>
 								<div class="team-item__cont icon-tel"><a href="tel:+74862445060">+7 (4862) 44-50-60</a></div>
@@ -135,7 +135,7 @@
 						</div>
 						<div class="_cpc__cols cols">
 							<div class="team-item">
-								<div class="team-item__preview"><img src="/img/team/item4.jpg" alt=""></div>
+								<div class="team-item__preview"><img src="./img/team/item4.jpg" alt=""></div>
 								<h3 class="team-item__heading">Темнова<br> Александра</h3>
 								<div class="team-item__post">Менеджер по работе с клиентами</div>
 								<div class="team-item__cont icon-tel"><a href="tel:+74862445060">+7 (4862) 44-50-60</a></div>
@@ -150,7 +150,7 @@
 						</div>
 						<div class="_cpc__cols cols">
 							<div class="team-item">
-								<div class="team-item__preview"><img src="/img/team/item5.jpg" alt=""></div>
+								<div class="team-item__preview"><img src="./img/team/item5.jpg" alt=""></div>
 								<h3 class="team-item__heading">Седова<br> Елена</h3>
 								<div class="team-item__post">Менеджер по ипотечному кредитованию</div>
 								<div class="team-item__cont icon-tel"><a href="tel:+74862445060">+7 (4862) 44-50-60</a></div>
@@ -220,12 +220,13 @@
 				<div class="modal-block _msc__block">		
 					<h3 class="modal-title">Закажите</h3>
 					<div class="">обратный звонок</div>			
-					<form action="#" class="form-site _msc__form">
+					<form action="./formsave.php" method="POST" class="form-site azbn-form _msc__form">
+	<input type="hidden" name="f[Источник]" value="Форма заявки на обратный звонок" />
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
+		<input type="text" name="f[Имя]" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
+		<input type="tel" name="f[Телефон]" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Перезвоните мне</button>

@@ -7,8 +7,8 @@ DG.then(function () {
 		zoom: 17
   	});
 	var myIcon = DG.icon({
-		iconUrl: '/img/default/icon-map.png',
-		iconRetinaUrl: '/img/default/icon-map.png',
+		iconUrl: './img/default/icon-map.png',
+		iconRetinaUrl: './img/default/icon-map.png',
 		iconSize: [100, 128],
 		iconAnchor: [50, 128],
 		popupAnchor: [0, 0]

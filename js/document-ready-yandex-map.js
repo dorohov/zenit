@@ -28,7 +28,7 @@ $(function() {
 			hintContent: '«Кластер ГЛОНАСС»'
 		}, {
 			iconLayout: 'default#image',
-			iconImageHref: '/img/default/icon-map-glonass.png',
+			iconImageHref: './/img/default/icon-map-glonass.png',
 			iconImageSize: [94, 104],
 			iconImageOffset: [-47, -104]
 		});

@@ -23,7 +23,7 @@ $(function() {
         };
         var mapElement = document.getElementById('map-google');
         var map = new google.maps.Map(mapElement, mapOptions);
-        var image = 'img/default/icon-map.png';
+        var image = './img/default/icon-map.png';
         var marker = new google.maps.Marker({
         position: coord_marker,
         map: map,

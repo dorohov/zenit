@@ -64,7 +64,7 @@
 								<li><a href="./note.html">Описание</a></li>
 								<li><a href="./layouts.html">Планировки квартир</a></li>
 								<li><a href="./location.html">Расположение</a></li>
-								<li><a href="./faq.html">Вопросы и ответы</a></li>
+								<!--<li><a href="./faq.html">Вопросы и ответы</a></li>-->
 								<li><a href="./contacts.html">Контакты</a></li>
 							</ul>
 						</div>	
@@ -146,15 +146,16 @@
 					<div class="_fpc__form-block">
 						<h4>Не нашли ответа на свой вопрос?</h4>
 						<div>Заполните форму и мы ответим Вам в ближайшее время.</div>
-						<form action="#" class="form-site _fpc__form">
+						<form action="./formsave.php" method="POST" class="form-site _fpc__form azbn-form">
+	<input type="hidden" name="f[Источник]" value="Форма связи" />
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="f[b_name]" placeholder="Ваше имя">
+		<input type="text" name="f[Имя]" class="_frms__form-control form-control validate[required]" id="f[b_name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[b_phone]" placeholder="Ваш телефон">
+		<input type="tel" name="f[Телефон]" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[b_phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__textarea">
-		<textarea class="_frms__form-control form-control validate[required]" placeholder="Ваш вопрос" id="f[b_note]"></textarea>
+		<textarea name="f[Вопрос]" class="_frms__form-control form-control validate[required]" placeholder="Ваш вопрос" id="f[b_note]"></textarea>
 	</div>	
 	<div class="_frms__input">
 		<button type="submit" class="btn-site btn-yellow">Отправить</button>
@@ -217,12 +218,13 @@
 				<div class="modal-block _msc__block">		
 					<h3 class="modal-title">Закажите</h3>
 					<div class="">обратный звонок</div>			
-					<form action="#" class="form-site _msc__form">
+					<form action="./formsave.php" method="POST" class="form-site azbn-form _msc__form">
+	<input type="hidden" name="f[Источник]" value="Форма заявки на обратный звонок" />
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
+		<input type="text" name="f[Имя]" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
+		<input type="tel" name="f[Телефон]" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Перезвоните мне</button>

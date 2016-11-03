@@ -52,39 +52,16 @@
 			$('.azbn-room-view-info .azbn-roomcount').html(room.roomcount);
 			$('.azbn-room-view-info .azbn-roomspace').html(room.roomspace);
 			
+			if(parseInt(room.roomcount) == 1) {
+				$('.azbn-room-view-info .azbn-roomspace-suffix').html('а');
+			} else {
+				$('.azbn-room-view-info .azbn-roomspace-suffix').html('ы');
+			}
 			
 		});
 		
 	});
 	
+	$('map#floorMap area').eq(-1).trigger('click.azbn');
 	
-	/*
-	showroom(2278,'32/f5-17r1-sm.jpg','32/f5-17r1.jpg', 'Общая площадь с учетом лоджий и балконов: 73.53 м<sup>2</sup><br>Количество комнат: 2<br>Площадь комнат: 36.02 м<sup>2</sup><br>Площадь кухни: 14.33 м<sup>2</sup>','');"
-	*/
-	
-	/*
-	$('map#floorMap area').each(function(index){
-		
-		var block = $(this);
-		var o_block = block.get(0);
-		
-		o_block.addEventListener('mouseover', function() {
-			console.log('mouseover');
-		});
-		o_block.addEventListener('mouseout', function() {
-			console.log('mouseout');
-		});
-		
-	});
-	*/
-	/*
-	alert(123);
-	
-	document.querySelector('area').addEventListener('mouseover', function() {
-			console.log('mouseover');
-		});
-	document.querySelector('area').addEventListener('mouseout', function() {
-			console.log('mouseout');
-		});
-	*/
 })();

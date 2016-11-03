@@ -64,7 +64,7 @@
 								<li><a href="./note.html">Описание</a></li>
 								<li><a href="./layouts.html">Планировки квартир</a></li>
 								<li><a href="./location.html">Расположение</a></li>
-								<li><a href="./faq.html">Вопросы и ответы</a></li>
+								<!--<li><a href="./faq.html">Вопросы и ответы</a></li>-->
 								<li><a href="./contacts.html">Контакты</a></li>
 							</ul>
 						</div>	
@@ -179,12 +179,13 @@
 				<div class="modal-block _msc__block">		
 					<h3 class="modal-title">Закажите</h3>
 					<div class="">обратный звонок</div>			
-					<form action="#" class="form-site _msc__form">
+					<form action="./formsave.php" method="POST" class="form-site azbn-form _msc__form">
+	<input type="hidden" name="f[Источник]" value="Форма заявки на обратный звонок" />
 	<div class="_frms__input icon icon-user">
-		<input type="text" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
+		<input type="text" name="f[Имя]" class="_frms__form-control form-control validate[required]" id="f[name]" placeholder="Ваше имя">
 	</div>	
 	<div class="_frms__input icon icon-tel">
-		<input type="tel" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
+		<input type="tel" name="f[Телефон]" class="_frms__form-control form-control validate[required,custom[phone]]"  id="f[phone]" placeholder="Ваш телефон">
 	</div>	
 	<div class="_frms__input _msc__form-btn">
 		<button type="submit" class="btn-site btn-blue">Перезвоните мне</button>
