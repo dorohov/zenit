@@ -5,6 +5,8 @@
 require_once($base_url."../func.php");
 $l = db_connect();
 
+Header('Content-Type: text/html; charset=utf-8');
+
 function arr2json($a) {
 	function prepareUTF($matches){
 		return json_decode('"'.$matches[1].'"');

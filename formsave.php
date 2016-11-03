@@ -1,6 +1,8 @@
 <?
 // обратная связь
 
+Header('Content-Type: text/html; charset=utf-8');
+
 function __azbn_check($str = '') {
 	return htmlspecialchars(trim($str), ENT_QUOTES, 'UTF-8');
 }

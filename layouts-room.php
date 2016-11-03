@@ -5,6 +5,8 @@
 require_once($base_url."../func.php");
 $l = db_connect();
 
+Header('Content-Type: text/html; charset=utf-8');
+
 $floor_id = intval($_GET['floor_id']);
 
 if($floor_id) {

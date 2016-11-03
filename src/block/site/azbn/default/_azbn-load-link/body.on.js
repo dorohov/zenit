@@ -30,7 +30,13 @@
 			
 			d.empty().remove();
 			
-			$('.azbn-load-link[href="' + href + '"]').closest('li').addClass('active');
+			if($('.azbn-load-link[href="' + href + '"]').length) {
+				$('.azbn-load-link[href="' + href + '"]').closest('li').addClass('active');
+			} else {
+				var _href = window.location.href;
+				_href = (_href.split('/')).pop();
+				$('.azbn-load-link[href="./' + _href + '"]').closest('li').addClass('active');
+			}
 			
 			if(addToHistory == true) {
 				// Добавляем запись в историю, используя pushState

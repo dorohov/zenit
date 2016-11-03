@@ -112,3 +112,11 @@ $('._frms__form-control').on('focusout', function(){
 });
 
 $(document.body).trigger('azbn.own.init');
+
+(function(){
+	
+	var _href = window.location.href;
+	_href = (_href.split('/')).pop();
+	$('.navbar-nav-note a[href="./' + _href + '"]').closest('li').addClass('active');
+	
+})();
