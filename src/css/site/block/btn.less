@@ -178,7 +178,6 @@
 	}
 }
 .btn-zoom{
-	position: absolute;
 	&:before{
 		font-family: @icon;
 		content: @icon-zoom-in;
@@ -186,6 +185,21 @@
 		color: fadeout(@white, 70%);
 		font-size: 70px;
 		line-height: 70px;
+		@media @media-size-lg{
+			font-size: 60px;
+			line-height: 60px;
+		}
+	}
+	@media @media-device{
+		margin: 30px auto 0;
+		width: 70px;
+		display: block;
+	}
+	@media @media-screen{
+		position: absolute;
+		left: 50%;
+		bottom: -100px;
+		transform: translateX(-50%);
 	}
 }
 
