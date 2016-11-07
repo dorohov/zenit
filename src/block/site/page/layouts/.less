@@ -73,6 +73,21 @@
 		transform: translateY(-50%);
 		font-weight: normal;
 		font-size: 50px;
+		animation-duration: 0.8s;
+		animation-fill-mode: both;
+		animation-iteration-count: infinite;
+		animation-name: animated-icon;
+	}
+}
+@keyframes animated-icon {	
+	from {
+		transform: translateX(0) translateY(-50%);
+	}
+	50%{
+		transform: translateX(-5px) translateY(-50%);
+	}
+	to{
+		transform: translateX(0px) translateY(-50%); 
 	}
 }
 .layout-fade{

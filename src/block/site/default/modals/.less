@@ -44,6 +44,8 @@
 	@media @media-screen{		
 		&.fade ._msc__dialog {.translate(0, 100%)}
 		&.in ._msc__dialog {.translate(0, 0%)}
+		&.fade ._msf__dialog {.translate(-100%, 0%)}
+		&.in ._msf__dialog {.translate(0, 0%)}
 	}
 }
 .modal-open .modal {
@@ -201,6 +203,17 @@
 }
 
 ._msm__title{margin-bottom: 30px;}
+._msf__dialog{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+._msf__content{
+	height: 100%;
+}
+._msf__body{
+	background: @yellow-light;
+}
 /*
 
 ._msp__dialog{ 
