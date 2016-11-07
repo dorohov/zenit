@@ -2773,3 +2773,28 @@ textarea._frms__form-control{
 	height: 100%;
 	position: absolute!important;
 }
+.azbn-load-circle {
+	position:fixed;
+	border-radius:50%;
+	width:3000px;
+	height:3000px;
+	left:100%;
+	top:100%;
+	opacity:0;
+	z-index: 1000;
+	background-color:white;
+	transform-origin:center center;
+	transition:all 0.5s ease;
+	
+	&[data-state="active"] {
+		opacity:1;
+		left:-1000px;
+		top:-1000px;
+	}
+	&[data-state="finish"] {
+		left:-1000px;
+		top:-1000px;
+		opacity:0;
+		z-index: -1000;
+	}
+}
