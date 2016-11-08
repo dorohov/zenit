@@ -27,7 +27,10 @@
 	._nbr__btn{
 		&.hamburger{
 			@media @media-size-xs{
-				height: ~"calc(100% + " @top-val-xs ~")";
+				height: ~"calc(100% + " @top-val-xs ~" + 55px)";
+				.hamburger-box{
+					margin-bottom: 55px;
+				}
 			}
 			@media @media-size-sm{
 				height: ~"calc(100% + " @top-val ~")";
@@ -136,6 +139,7 @@
 }
 .hamburger--elastic{
 	.hamburger-box {
+		transition: @transition-site;
 	    width: 32px;
 	    height: 29px;
     	@media @media-size-xs{width: 24px}

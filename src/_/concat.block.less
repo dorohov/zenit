@@ -1,3 +1,167 @@
+		.full-screen.page-loader {
+			@dark-el-color-bg:rgba(0,0,0,0.75);
+			@dark-el-color-font:#ffffff;
+			
+			@semi-dark-el-color-bg:rgba(0,0,0,0.4);
+			@semi-dark-el-color-font:#ffffff;
+			
+			transition: all 0.7s ease;
+			
+			opacity:0;
+			height: 0%;
+			
+			&.active {
+				opacity:1;
+				height: 100%;
+			}
+			
+			.process-container {
+				display:block;
+				position:relative;
+				width:300px;
+				height:3em;
+				line-height:3em;
+				margin:2em auto;
+				white-space:nowrap;
+				#fe.uppercase(lowercase);
+				#fe.bold();
+				#fe.size(1em);
+				#fe.bg(transparent);
+				#fe.color(@dark-el-color-font);
+				
+				.process-level {
+					position:absolute;
+					left:50%;
+					top:0;
+					display:block;
+					width: 0%;
+					height:100%;
+					margin:0 auto;
+					z-index:0;
+					overflow-x:hidden;
+					text-align:center;
+					#fe.underline(none);
+					
+					#fe.bg(@dark-el-color-font);
+					animation: processloading 1s infinite;
+				}
+				
+			}
+			
+			.close-loader {
+				position:relative;
+				z-index:2;
+				display:block;
+				margin:2em auto;
+				width:30em;
+				height:3em;
+				line-height:3em;
+				#fe.bold();
+				#fe.size(1em);
+				#fe.underline(none);
+				#fe.uppercase();
+				#fe.bg(@dark-el-color-font * 0.6);
+				#fe.color(@dark-el-color-bg);
+				
+				transition: all 0.4s ease;
+				
+				&:hover {
+					#fe.bg(@dark-el-color-font);
+				}
+			}
+		}
+		
+		.page-loader ._azbn__preloader-percent {
+			position: absolute;
+			color: rgba(200,200,200,0.3);
+			font-size: 120px;
+			//#fe.ff(@calibri-bold);
+			z-index:1;
+			top: 51%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		
+		.page-loader {
+			@media @media-device{
+				display:none;
+			}
+		}
+
+._czr__loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	display: none;
+	background: @blue;
+	&.active{
+		display: block;
+		z-index: 10000;
+	}
+}
+._czr__preloader-inner{
+	height: 100%;
+}
+._czr__preloader-center{	
+	height: 100%;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+._czr__preloader-process-container {
+	display:block;
+	position:relative;
+	width: 100%;
+	height: 6px;
+	background: transparent;	
+}
+._czr__preloader-process-level{
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	width: 0%;
+	height:100%;
+	margin:0 auto;
+	z-index:0;
+	background: @white;
+	transition: all 0.3s ease;
+}
+._czr__preloader-inner{
+	height: 100%;
+}
+._czr__preloader-center{	
+	height: 100%;
+	width: 100%;
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+._czr__preloader-process-container {
+	display:block;
+	position:relative;
+	width: 100%;
+	height: 6px;
+	background: transparent;	
+}
+._czr__preloader-process-level{
+	position:absolute;
+	left:0;
+	top:0;
+	display:block;
+	width: 0%;
+	height:100%;
+	margin:0 auto;
+	z-index:0;
+	background: @white;
+	transition: all 0.3s ease;
+} 
 .footer-site{
 	position: relative;
 	padding: 40px 0;
@@ -1165,7 +1329,10 @@ textarea._frms__form-control{
 	._nbr__btn{
 		&.hamburger{
 			@media @media-size-xs{
-				height: ~"calc(100% + " @top-val-xs ~")";
+				height: ~"calc(100% + " @top-val-xs ~" + 55px)";
+				.hamburger-box{
+					margin-bottom: 55px;
+				}
 			}
 			@media @media-size-sm{
 				height: ~"calc(100% + " @top-val ~")";
@@ -1274,6 +1441,7 @@ textarea._frms__form-control{
 }
 .hamburger--elastic{
 	.hamburger-box {
+		transition: @transition-site;
 	    width: 32px;
 	    height: 29px;
     	@media @media-size-xs{width: 24px}
@@ -1906,6 +2074,57 @@ textarea._frms__form-control{
 		left: 350px;
 	}
 }
+._dpc__mouse{
+	transition: @transition-site;
+	@media @media-device{display: none;}
+	@media @media-screen{
+		position: absolute;
+		right: 50%;
+		bottom: -120px;
+		width: 70px; 
+		transform: translateX(200%);   
+		color: fadeout(@white, 70%);
+		text-align: center;
+	}
+	@media @media-size-mdl{
+		width: 60px; 
+	}
+	@media @media-size-xxl{		
+		bottom: -20px;
+		transform: translateX(50%);
+	}
+	&._dpc__mouse-floor1{
+		@media @media-size-xxl{
+			right: 500px;
+		}
+	}
+	&._dpc__mouse-floor2{
+		@media @media-size-xxl{
+			right: 430px;
+		}
+	}
+	&:before{
+		font-family: @icon;
+		content: @icon-mouse;
+		font-size: 70px;
+		line-height: 70px;
+		display: block;
+		@media @media-size-mdl{
+			font-size: 60px;
+			line-height: 60px;
+		}
+	}
+	&:after{
+		font-family: @icon;
+		display: block;
+		content: @icon-next;
+		transform: rotate(90deg);
+		animation-duration: 0.8s;
+		animation-fill-mode: both;
+		animation-iteration-count: infinite;
+		animation-name: animated-scroll;
+	}
+}
 ._dpc__panel-info{
 	padding: 20px;
 	text-align: center;
@@ -1980,24 +2199,27 @@ textarea._frms__form-control{
 		top: 590px;
 		z-index: 10;
 		width: 255px;
+	    padding-left: 45px;
 	}
 	@media @media-size-mdl{
-		width: 190px;
-	    top: 160px;
-    	left: 290px;
+		width: 150px;
+		top: 160px;
+		left: 290px;
+		padding: 0;
 		font-size: @b-fs - 2px;  // 20px;
 		line-height: @b-lh - 2px; //24px;
 
-	    /*width: 280px;
-    	right: 40px;
-    	text-align: center;	*/
+		/*width: 280px;
+		right: 40px;
+		text-align: center;	*/
 	}
 	@media @media-size-xl{
-		width: 300px;
+		width: 200px;
 		top: 535px;
 		left: 70px;
 		font-size: @b-fs;  // 20px;
 		line-height: @b-lh; //24px;	
+		padding-left: 30px;
 	}
 	@media @media-size-xxl{left: 70px;}
 }
@@ -2016,30 +2238,6 @@ textarea._frms__form-control{
 	@media @media-size-xl{
 		font-size: @b-fs + 8px; //30px;
 		line-height: @b-lh + 10px; //36px;
-	}
-}
-._dpc__mouse{
-	@media @media-device{display: none;}
-	width: 50px;
-    margin: 30px auto 0;
-    text-align: center;
-    transition: @transition-site;
-	&:before{
-		font-family: @icon;
-		content: @icon-mouse;
-		font-size: 50px;
-		line-height: 50px;
-		display: block;
-	}
-	&:after{
-		font-family: @icon;
-		display: block;
-		content: @icon-next;
-		transform: rotate(90deg);
-		animation-duration: 0.8s;
-		animation-fill-mode: both;
-		animation-iteration-count: infinite;
-		animation-name: animated-scroll;
 	}
 }
 
@@ -2496,6 +2694,7 @@ textarea._frms__form-control{
 		width: 100%;
 		font-size: 30px;
 		line-height: 36px;
+		background: fadeout(@blue, 60%);
 	}
 	@media @media-size-xs{
 		bottom: 0px;
@@ -2508,7 +2707,6 @@ textarea._frms__form-control{
 	}
 	@media @media-size-sm{		
 		top: @b-nav-top-sm;
-		background: fadeout(@blue, 60%);
 	}
 	@media @media-screen{
 		top: 53.5%;
