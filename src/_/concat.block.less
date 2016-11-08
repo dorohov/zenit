@@ -1346,7 +1346,7 @@ textarea._frms__form-control{
 }
 .panel-advantages{
 	font-family: @open-light;
-	font-size: @b-fs; //18px;
+	font-size: @b-fs - 2px; //18px;
 	line-height: @b-lh; //24px;
 	@media @media-size-sm{
 		padding: 20px 10px 15px 20px;
@@ -1368,7 +1368,7 @@ textarea._frms__form-control{
 		position: relative;
 	}
 	.icon{
-		padding: 7px 0px 7px 50px;
+		padding: 7px 0px 7px 45px;
 		position: relative;
 		margin-bottom: 18px;
 		@media @media-size-mdl{
@@ -1382,8 +1382,8 @@ textarea._frms__form-control{
 			color: @yellow;
 			position: absolute;
 			left: 0;
-			font-size: 34px;
-			line-height: 34px;
+			font-size: 30px;
+			line-height: 30px;
 			top: 50%;
 			transform: translateY(-50%);
 			@media @media-size-mdl{
@@ -2358,21 +2358,20 @@ textarea._frms__form-control{
 	}
 	@media @media-size-xl{
 		font-size: @b-fs + 54px; //70px
-		line-height: @b-lh + 43px; //53px
-		margin-bottom: 50px;
+		line-height: @b-lh + 60px; //63px
+		margin-bottom: 35px;
+		br:first-child{display: none;}
 	}
 	@media @media-size-xxl{
-		font-size: @b-fs + 84px; //100px
-		line-height: @b-lh + 73px; //93px
+		font-size: @b-fs + 64px; //90px
+		line-height: @b-lh + 53px; //83px
 		margin-bottom: 65px;
 	}
 }
 ._ipc__note{
 	font-family: @georgia;	
-	margin-bottom: 70px; 
-	@media @media-size-xs{
-		margin-bottom: 35px
-	}
+	margin-bottom: 60px; 
+	@media @media-size-xs{margin-bottom: 35px}
 	@media @media-size-sm{
 		font-size: @b-fs + 4px; //20px
 		line-height: @b-lh + 4px; //24px
@@ -2394,7 +2393,13 @@ textarea._frms__form-control{
 	}
 }
 ._ipc__pictograph{
-	@media @media-notsmart{max-width: 500px}	
+	//@media @media-notsmart{max-width: 500px}	
+	@media @media-notsmart{max-width: 400px}	
+}
+._ipc__pictograph-note{
+	font-family: @georgia;	
+	margin-bottom: 10px; 
+
 }
 ._ipc__pictograph-row{
 	@media @media-size-xs{justify-content: center;}
