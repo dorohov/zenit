@@ -28,7 +28,9 @@
 <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-<link href="./css/site.css" rel="stylesheet"> 
+<link href="./css/site.css" rel="stylesheet">
+<link href="./css/animate.min.css" rel="stylesheet">
+<script src="./js/spin.min.js" ></script> 
 	</head>
 	<body>	
  		<div class="site-block-fix">
@@ -179,6 +181,7 @@
 <script src="./js/bootstrap.min.js" ></script>
 <script src="./js/jquery.bootstrap-autohidingnavbar.min.js" ></script>
 <script src="./js/device.min.js" ></script>
+<script src="./js/wow.min.js" ></script>
 <script src="./plugins/owl.carousel/owl.carousel.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./plugins/twentytwenty/css/twentytwenty.css">
@@ -202,6 +205,34 @@
 
 <script src="./plugins/jquery.scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="./js/retina.min.js" ></script>
+
+<script>
+
+if(typeof Spinner != 'undefined') {
+	
+	var opts = {
+		lines: 10, // The number of lines to draw
+		length: 7, // The length of each line
+		width: 5, // The line thickness
+		radius: 10, // The radius of the inner circle
+		corners: 1, // Corner roundness (0..1)
+		rotate: 0, // The rotation offset
+		color: '#fff', // #rgb or #rrggbb
+		speed: 1, // Rounds per second
+		trail: 60, // Afterglow percentage
+		shadow: false, // Whether to render a shadow
+		hwaccel: false, // Whether to use hardware acceleration
+		className: 'spinner', // The CSS class to assign to the spinner
+		zIndex: 2e9, // The z-index (defaults to 2000000000)
+		top: 25, // Top position relative to parent in px
+		left: 25 // Left position relative to parent in px
+	};
+	var target = document.getElementById('_czr__spinner')
+	var spinner = new Spinner(opts).spin(target);
+	
+}
+
+</script>
 		<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 		<script src="./js/document-ready-2gis-map.js"></script>
 

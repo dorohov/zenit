@@ -20,8 +20,22 @@ $(window).load(function(event){
 	$(document.body).on('fecss.can-close-it', '.page-loader' ,function(event){
 		event.preventDefault();
 		
-		if($(this).data('counter-can-close-it') && $(this).data('window-can-close-it')) {
-			$(this).removeClass('active');//.delay(2000).empty().remove();
+		var block = $(this);
+		
+		if(block.data('counter-can-close-it') && block.data('window-can-close-it')) {
+			
+			if (device.mobile() || device.tablet()) {
+			
+			} else {
+				//setTimeout(function(){
+					new WOW().init();
+				//},1);
+			}
+			
+			setTimeout(function(){
+				block.removeClass('active');//.delay(2000).empty().remove();
+			},85);
+			
 		}
 		
 	});
@@ -32,6 +46,7 @@ $(window).load(function(event){
 			.trigger('fecss.can-close-it');
 		
 		$('.page-loader ._czr__preloader-process-container ._czr__preloader-process-level').data('fast-page-loading', true);
+		
 	});
 	
 	$(function(){
