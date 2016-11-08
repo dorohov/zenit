@@ -2441,12 +2441,14 @@ textarea._frms__form-control{
 	}
 	@media @media-size-xs-l{
     	transform: scale(1.1,1.1) translate(0px,-25px);
+	    transform: scale(0.8,0.8) translate(0,-85px);
 	}
 	@media @media-size-sm-p{
     	transform: scale(2.5,2.5) translate(60px, 100px);
 	}
 	@media @media-size-sm-l{
     	transform: scale(1.5,1.6) translate(70px,-25px);
+    	transform: scale(1.4,1.5) translate(70px,-15px);    	
 	}
     @media @media-screen{
 		position: absolute;
@@ -2480,33 +2482,53 @@ textarea._frms__form-control{
 }
 .layout-note{
 	position: absolute;
-	transform: translate(-50%, -50%);
 	z-index: 20;
-	font-family: @garamond;
-	top: 53.5%;
-	left: 77%;
-	padding-left: 75px;
-	font-size: 66px;
-	line-height: 50px;
+	font-family: @garamond;	
 	font-weight: bold;
-	max-width: 380px;
 	transition: @transition-site;
 	@media @media-device{
-		display: none;
-	}
-	&:before{
-		font-family: @icon;
-		content: @icon-left;
-		position: absolute;
+		padding: 20px 25px;		
+		text-align: center;
 		left: 0px;
-		top: 50%;
-		transform: translateY(-50%);
-		font-weight: normal;
-		font-size: 50px;
-		animation-duration: 0.8s;
-		animation-fill-mode: both;
-		animation-iteration-count: infinite;
-		animation-name: animated-icon;
+		width: 100%;
+		font-size: 30px;
+		line-height: 36px;
+	}
+	@media @media-size-xs{
+		bottom: 0px;
+	}
+	@media @media-size-xs-l{
+		display: none!important;
+	}
+	@media @media-size-sm-l{
+		display: none!important;
+	}
+	@media @media-size-sm{		
+		top: @b-nav-top-sm;
+		background: fadeout(@blue, 60%);
+	}
+	@media @media-screen{
+		top: 53.5%;
+		left: 77%;
+		padding-left: 75px;
+		font-size: 66px;
+		line-height: 50px;
+		max-width: 380px;
+		transform: translate(-50%, -50%);
+		&:before{
+			font-family: @icon;
+			content: @icon-left;
+			position: absolute;
+			left: 0px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-weight: normal;
+			font-size: 50px;
+			animation-duration: 0.8s;
+			animation-fill-mode: both;
+			animation-iteration-count: infinite;
+			animation-name: animated-icon;
+		}
 	}
 }
 @keyframes animated-icon {	
