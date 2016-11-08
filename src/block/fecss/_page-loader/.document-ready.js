@@ -70,7 +70,7 @@ $(window).load(function(event){
 					$('._azbn__preloader-percent').text(pos);
 					
 					if(b.data('fast-page-loading')) {
-						pos = pos + 6;
+						pos = pos + 9;
 					}
 					
 					var h = 100 + (pos);
@@ -91,6 +91,6 @@ $(window).load(function(event){
 					
 				}
 				
-			}, 99);
+			}, 40);
 		}
 	});
