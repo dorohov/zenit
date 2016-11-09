@@ -1575,7 +1575,8 @@ textarea._frms__form-control{
 	@media @media-notsmart{padding: 35px 20px 50px 35px;}
 	@media @media-device{order:-1; margin-bottom: 25px}
 	@media @media-screen{
-		max-height: 380px;
+		max-height: 380px;    
+		min-height: 380px;
 		position: absolute;
 		bottom: 0px;
 		right: 0px;
@@ -1691,6 +1692,7 @@ textarea._frms__form-control{
     padding: 0 90px;
     @media @media-size-xs{padding: 0}
     @media @media-device{margin-bottom: 35px;}
+	@media @media-size-md{padding: 0 70px;}
 }
 .building-gallery__item{
 	width: 375px;
@@ -1710,6 +1712,10 @@ textarea._frms__form-control{
 	@media @media-size-sm{
 		width: 215px;
 		height: 215px;		
+	}
+	@media @media-size-md{
+		width: 175px;
+		height: 175px;		
 	}
 	@media @media-size-lg1{
 		width: 215px;
@@ -1779,7 +1785,11 @@ textarea._frms__form-control{
 	    transform: translateX(-50%);
 	}
 }
-.contacts-page-content{}
+.contacts-page-content{
+	.content-site{
+		@media @media-size-xxl{padding-top: 160px;}
+	}
+}
 ._cpc__row{
 	height: 100%;
 	@media @media-device{flex-wrap: wrap;}
@@ -2231,7 +2241,11 @@ textarea._frms__form-control{
 		font-size: @b-fs + 4px; //30px;
 		line-height: @b-lh + 6px; //36px;
 	}
-	@media @media-size-mdl{
+	@media @media-size-md{
+		font-size: @b-fs + 2px; //
+		line-height: @b-lh + 2px; //
+	}
+	@media @media-size-lg{
 		font-size: @b-fs + 6px; //30px;
 		line-height: @b-lh + 8px; //36px;
 	}
@@ -2290,6 +2304,7 @@ textarea._frms__form-control{
 	@media @media-size-xs-l{width: 50%}
 	@media @media-size-sm-p{width: 50%}
 	@media @media-size-sm-l{width: 33.3333%}
+	@media @media-size-md{width: 33.3333%}
 	@media @media-size-xxl{width: 20%}
 }
 .docs-item{
@@ -2854,11 +2869,6 @@ textarea._frms__form-control{
 		}
 	}
 }
-.location-page-content{
-	width: 100%;
-	height: 100%;
-	position: absolute!important;
-}
 .layouts-room-page-content{
 	.content-site{
 		position: relative;
@@ -3000,6 +3010,11 @@ textarea._frms__form-control{
 	@media @media-notsmart{
 		.btn-yellow-bg-line{margin-left: 28px;}
 	}
+}
+.location-page-content{
+	width: 100%;
+	height: 100%;
+	position: absolute!important;
 }
 .azbn-load-circle {
 	position:fixed;
