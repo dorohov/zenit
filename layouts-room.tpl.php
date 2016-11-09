@@ -4,7 +4,7 @@ $floor_name = $floor['id'] - 283;
 <html dir="ltr" lang="ru-RU"> 
 	<head>
 		<meta charset="utf-8">	
-<title>zenit-orel.ru</title>
+<title>Планировки квартир на этаже</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -99,7 +99,7 @@ $floor_name = $floor['id'] - 283;
 							</div>
 						</div>
 						<div class="_lrpc__cols-btn cols">
-							<a href="./design-floor.html" class="btn-site btn-design">Посмотреть примеры типового дизайна</a>
+							<a href="./design-floor.html" class="btn-site btn-design">Пример использования жилого пространства квартиры</a>
 						</div>
 					</div>
 					<div class="row _lrpc__row2"> 
@@ -142,7 +142,7 @@ $floor_name = $floor['id'] - 283;
 								<div class="_num azbn-roomcount"></div>
 								<div>комната</div>
 								<div><span class="azbn-roomspace" ></span> м<sup>2</sup></div>
-								<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на просмотр</button></div>
+								<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на консультацию</button></div>
 							</div>
 						</div>
 					</div>
@@ -242,7 +242,7 @@ $floor_name = $floor['id'] - 283;
 				<button type="button" class="btn-site btn-close modal-btn-close" data-dismiss="modal" aria-hidden="true"></button>
 				<div class="modal-block _msc__block">		
 					<h3 class="modal-title">Заявка</h3>
-					<div class="">на просмотр</div>			
+					<div class="">на консультацию</div>			
 					<form action="./formsave.php" method="POST" class="form-site azbn-form _msc__form">
 	<input type="hidden" name="f[Источник]" value="Форма заявки на просмотр" />
 	<div class="_frms__input icon icon-user">
