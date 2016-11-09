@@ -20,7 +20,28 @@ if (device.tablet()) {
 if (device.mobile()) {
 	$('._fpc__accordion').removeAttr('id');
 	$('.layouts-page-content').css("height", h_content_index);
-} else {
+} else {	
+	$('.modal-owl').owlCarousel({
+		margin: 0,
+		loop: true,
+		items:1,	
+		navText: [],
+		autoplay:true,
+		smartSpeed: 500,
+		autoplayTimeout:10000,	
+		nav: true,
+		dots: false,
+		/*responsive:{
+		   	0:{
+				nav: false,
+				dots: true,
+		   	},
+		   	768:{
+				nav: true,
+				dots: false,
+		   	},
+		}*/
+	});
 }
 if (device.mobile() || device.tablet()) {
 	$('.navbar').addClass('navbar-fixed-top');
