@@ -1,6 +1,8 @@
 <?
 // обратная связь
 
+$email = 'sales@zenit-orel.ru';
+
 Header('Content-Type: text/html; charset=utf-8');
 
 function __azbn_check($str = '') {
@@ -34,7 +36,7 @@ if(count($_POST['f'])) {
 		</html>
 		';
 		//wp_mail((explode(',', strtr(get_field('host_email', $Azbn->post['id']), array(' '=>'',)))), 'Новая форма на сайте #'.$post_id, $body, $headers, $attachments);
-		mail('devazbn@yandex.ru', 'Новая форма на сайте Зенит Роза Люксембург', $body, "From: site_zenit_roza@dorohovdesign.com");
+		@mail($email, 'Новая форма на сайте Зенит Роза Люксембург', $body, "From: site_zenit_roza@dorohovdesign.com");
 		
 		echo 'Спасибо! Ваша заявка принята!';
 		
