@@ -21,7 +21,6 @@ if (device.mobile()) {
 	$('._fpc__accordion').removeAttr('id');
 	$('.layouts-page-content').css("height", h_content_index);
 } else {	
-	
 	$('.modal.in .modal-owl').owlCarousel({
 		margin: 0,
 		loop: true,
@@ -42,8 +41,7 @@ if (device.mobile()) {
 		//		dots: false,
 		//   	},
 		//}
-	});
-	
+	});	
 }
 if (device.mobile() || device.tablet()) {
 	$('.navbar').addClass('navbar-fixed-top');
