@@ -49,14 +49,26 @@
 			$('.azbn-room-view-print .azbn-as-print').attr('href', base_pdf + room.id);
 			$('.azbn-room-view-print .azbn-as-pdf').attr('href', base_pdf + room.id + '&save=1');
 			
-			$('.azbn-room-view-info .azbn-roomcount').html(room.roomcount);
-			$('.azbn-room-view-info .azbn-roomspace').html(room.roomspace);
+			$('.azbn-room-view-info .azbn-roomspace').html(room.space);
 			
+			/*
 			if(parseInt(room.roomcount) == 1) {
 				$('.azbn-room-view-info .azbn-roomspace-suffix').html('а');
 			} else {
 				$('.azbn-room-view-info .azbn-roomspace-suffix').html('ы');
 			}
+			*/
+			$('.azbn-room-view-info .azbn-roomspace-suffix').html('а');
+			
+			$('.azbn-room-view-info .azbn-roomcount').html(room.roomcount).attr('data-roomcount', room.roomcount);
+			
+			/*
+			if(parseInt(room.roomcount) == 1) {
+				$('.azbn-room-view-info .azbn-roomcount').append('<span class="count-suffix" >-но</span>');
+			} else {
+				$('.azbn-room-view-info .azbn-roomcount').append('<span class="count-suffix" >-х</span>');
+			}
+			*/
 			
 		});
 		

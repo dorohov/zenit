@@ -2231,28 +2231,43 @@ textarea._frms__form-control{
 	}
 	._num{
 		font-size: 150px;
-		line-height: 120px;
+		line-height: 90px;
 		@media @media-size-xs{
 			font-size: 50px;
-			line-height: 30px;
+			line-height: 10px;
 		}
 		@media @media-size-sm{
 			font-size: 70px;
-			line-height: 50px;
+			line-height: 30px;
 		}
 		@media @media-size-mdl{
 			font-size: 100px;
-			line-height: 80px;
+			line-height: 60px;
 		}
 		@media @media-size-xl{
 			font-size: 120px;
-			line-height: 100px;
+			line-height: 80px;
+		}
+		
+		&:after {
+			content:'-х';
+			font-size:0.4em;
+		}
+		
+		&[data-roomcount="1"]:after {
+			content:'-но';
 		}
 	}
 	div{
-		margin-bottom: 20px;
+		font-size:0.88em;
+		margin-bottom: 0px;
 		@media @media-device{margin-bottom: 10px;}
 		@media @media-size-mdl{margin-bottom: 15px;}
+		
+		&:nth-child(2) {
+			line-height: 40px;
+			margin-bottom: 5px;
+		}
 	}
 }
 ._dpc__panel-note{

@@ -102,7 +102,7 @@ $price = sqlval("SELECT SQL_CALC_FOUND_ROWS * FROM price where status='3' and id
 							</div>
 						</div>
 						<div class="_lrpc__cols-btn cols">
-							<a href="./design-floor.html" class="btn-site btn-design">Пример использования жилого пространства квартиры</a>
+							<a href="./design-floor.html" class="btn-site btn-design">Пример использования жилого пространства квартир</a>
 						</div>
 					</div>
 					<div class="row _lrpc__row2"> 
@@ -143,7 +143,7 @@ $price = sqlval("SELECT SQL_CALC_FOUND_ROWS * FROM price where status='3' and id
 						<div class="cols _lrpc__info">
 							<div class="_dpc__panel-info _lrpc__panel-info azbn-room-view-info">
 								<div class="_num azbn-roomcount"></div>
-								<div>комната</div>
+								<div>комнатная квартира</div>
 								<div><span class="azbn-roomspace" ></span> м<sup>2</sup></div>
 								<div><button type="button" class="btn-site btn-white-line" data-toggle="modal" data-target="#modal-order">Заявка на консультацию</button></div>
 							</div>

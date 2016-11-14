@@ -29,7 +29,7 @@ if($room_id) {
 			'id' => $room['id'],
 			'bigimg' => $room['bigimg'],
 			'fullimg' => $room['fullimg'],
-			'roomspace' => $room['roomspace'],
+			'space' => $room['space'],
 			'roomcount' => $room['roomcount'],
 		));
 		
