@@ -1,5 +1,8 @@
 <?
 $floor_name = $floor['id'] - 283;
+
+$price = sqlval("SELECT SQL_CALC_FOUND_ROWS * FROM price where status='3' and id={$floor['id']} LIMIT 1");
+
 ?><!DOCTYPE html>
 <html dir="ltr" lang="ru-RU"> 
 	<head>
@@ -107,8 +110,8 @@ $floor_name = $floor['id'] - 283;
 							<div class="_lrpc__floor-inner">
 								
 								<div id="apart" name="apart" class="_lrpc__floor-apart">
-									<div class="_lrpc__floor-box" style="background-image: url('http://zenit-orel.ru/image/floor/<?=$floor['bigimg']?>'); background-repeat: no-repeat; min-height:350px;">
-	 									<img src="http://zenit-orel.ru/image/floor/<?=$floor['bigimg']?>" id="floorimg" usemap="#floorMap" style="position: absolute;">
+									<div class="_lrpc__floor-box" style="background-image: url('http://zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>');" data-base-url="http://zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>" >
+	 									<img src="http://zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>" id="floorimg" usemap="#floorMap" style="position: absolute;">
 										<map class="imap" id="floorMap" name="floorMap" data-base-url="room.php?room_id=" ><!-- data-base-url="/json/content/room.json?room_id=" -->
 											<?
 											$_r = array();

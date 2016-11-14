@@ -15,9 +15,9 @@
 		event.preventDefault();
 		
 		var block = $(this);
-		var img = 'http://zenit-orel.ru/image/floor/32/11.jpg';
+		var t_img = $('#floorimg');
 		
-		$('#floorimg').attr('src', img);
+		t_img.attr('src', t_img.attr('data-base-url'));
 		
 	});
 	
