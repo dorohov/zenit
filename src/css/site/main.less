@@ -118,13 +118,16 @@ ul{
 	}
 	.content-inner{
 		position: relative;
-		height: 100%;
 		padding-right: 0px;
 		@media @media-device{
 			display: flex;
-			flex-direction: column;			
+			//flex-direction: column;	
+			flex-wrap: wrap;		
 		}
 		@media @media-size-xs{padding-left: 40px;}
 		@media @media-size-sm{padding-left: 80px;}
+		@media @media-screen{
+			height: 100%;
+		}
 	}
 }

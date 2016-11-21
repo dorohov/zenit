@@ -20,6 +20,7 @@ if (device.tablet()) {
 if (device.mobile()) {
 	$('._fpc__accordion').removeAttr('id');
 	$('.layouts-page-content').css("height", h_content_index);
+	$("._lrpc__floor-inner").addClass("scroller").mCustomScrollbar();
 } else {	
 	$('.modal.in .modal-owl').owlCarousel({
 		margin: 0,

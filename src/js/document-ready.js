@@ -40,12 +40,7 @@ $(function() {
 	[[azbntple tpl="/src/_/concat.document-ready.js" ]]
 	
 	
-	/*
-	Событие смены размера экрана, генерация этого события
-	*/
-	$(window).on('resize',function(event){
-		[[azbntple tpl="/src/_/concat.window-resize.js" ]]
-	}).trigger('resize');
+	
 	
 	
 	/*
@@ -65,6 +60,12 @@ $(function() {
 		return;//return false;
 	}
 	
+	/*
+	Событие смены размера экрана, генерация этого события
+	*/
+	$(window).on('resize',function(event){
+		[[azbntple tpl="/src/_/concat.window-resize.js" ]]
+	}).trigger('resize');
 	
 	/*
 	Событие инициализации fecss

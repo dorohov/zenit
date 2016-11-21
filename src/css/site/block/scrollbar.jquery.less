@@ -355,7 +355,7 @@ yx-axis
 				//height: 30px!important;
 				.mCSB_dragger_bar{
 					background-color: @bar; 
-					width: @bar-size;
+					//width: @bar-size;
 					transition: @transition-site;
 				}
 				&:hover{
@@ -366,6 +366,13 @@ yx-axis
 				}
 				&.mCSB_dragger_onDrag{
 					.mCSB_dragger_bar{background-color: @bar-active;}
+				}
+			}
+		}
+		&.mCSB_scrollTools_vertical{
+			.mCSB_dragger{
+				.mCSB_dragger_bar{
+					width: @bar-size;
 				}
 			}
 		}
