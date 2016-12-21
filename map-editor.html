@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Редактор многоугольника</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://yastatic.net/jquery/3.1.0/jquery.js" type="text/javascript"></script>
+	<script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects,package.editor&lang=ru-RU" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	
+	ymaps.ready(init);
+	
+	function patchCoord(arr) {
+		var _arr = [];
+		
+		for(var i in arr) {
+			if(typeof arr[i] == 'number') {
+				_arr[i] = parseFloat(arr[i].toFixed(6));
+			} else {
+				_arr[i] = patchCoord(arr[i]);
+			}
+		}
+		
+		return _arr;
+	};
+	
+	function init() {
+		var myMap = new ymaps.Map("map", {
+			center: [52.906333, 36.231998],//36.231998%2C52.906333
+			zoom: 14,
+		});
+		
+		// Создаем многоугольник без вершин.
+		var myPolygon = new ymaps.Polygon([], {}, {
+			// Курсор в режиме добавления новых вершин.
+			editorDrawingCursor: "crosshair",
+			// Максимально допустимое количество вершин.
+			editorMaxPoints: 1000,
+			// Цвет заливки.
+			fillColor: '#00FF00',
+			// Цвет обводки.
+			strokeColor: '#0000FF',
+			// Ширина обводки.
+			strokeWidth: 5
+		});
+		// Добавляем многоугольник на карту.
+		myMap.geoObjects.add(myPolygon);
+		
+		// В режиме добавления новых вершин меняем цвет обводки многоугольника.
+		var stateMonitor = new ymaps.Monitor(myPolygon.editor.state);
+		stateMonitor.add("drawing", function (newValue) {
+			myPolygon.options.set("strokeColor", newValue ? '#FF0000' : '#0000FF');
+		});
+		
+		// Включаем режим редактирования с возможностью добавления новых вершин.
+		myPolygon.editor.startDrawing();
+		
+		myPolygon.geometry.events.add('change', function () {
+			//document.getElementById('result').innerHTML = myPolygon.geometry.getCoordinates();
+			$('#result').html(JSON.stringify(patchCoord(myPolygon.geometry.getCoordinates())));
+		});
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+	<div id="map" style="width:1024px; height:768px;"></div>
+	
+	<div class="" style="margin-top:40px;" >
+		<textarea id="result" style="margin:0px; display:block; height:300px; width:100%" ></textarea>
+	</div>
+</body>
+
+</html>
