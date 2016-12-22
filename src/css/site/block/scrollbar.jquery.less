@@ -390,15 +390,17 @@ yx-axis
 	@balls-size: 	@sc-balls-size,
 	@balls-visible: @sc-balls-visible
 ); //bace
+
+//@yellow
 .include-scrollbar-mCS(
 	@theme: 		yellow, 
 	@indent: 		0px, 
 	@scroll-indent: 0px, 
-	@rail: 			fadeout(@yellow, 50%), 
-	@bar: 			fadeout(@yellow, 0%),
+	@rail: 			fadeout(transparent, 0%), 
+	@bar: 			fadeout(transparent, 0%), 
 	@bar-size: 		@sc-bar-size, 
-	@bar-hover: 	fadeout(@yellow, 0%), 
-	@bar-active: 	fadeout(@yellow, 0%),
+	@bar-hover: 	fadeout(transparent, 0%), 
+	@bar-active: 	fadeout(transparent, 0%), 
 	@balls-size: 	5px,
 	@balls-visible: 0
 ); //opacity
