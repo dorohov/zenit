@@ -34,6 +34,7 @@ $price = sqlval("SELECT SQL_CALC_FOUND_ROWS * FROM price where status='3' and id
 <meta name="theme-color" content="#ffffff">
 
 <link href="./css/site.css" rel="stylesheet">
+<link href="./css/patch.css" rel="stylesheet">
 <link href="./css/animate.min.css" rel="stylesheet">
 <script src="./js/spin.min.js" ></script> 
 
