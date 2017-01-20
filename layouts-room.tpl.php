@@ -176,9 +176,12 @@ src="https://www.facebook.com/tr?id=694678950663471&ev=PageView&noscript=1"
 	</div>
 </div>
 			
-				<footer class="footer-site bg-darken not-blue" data-wow-delay="1s">	
+<footer class="footer-site bg-darken not-blue" data-wow-delay="1s">	
 	<div class="container">
 		<div class="row _fs__row">
+			<div class="cols _fs__builder-cols">
+				<div>ООО "Зенит-плюс"</div>
+			</div>
 			<div class="cols _fs__copyright-cols">
 				<div>Офис продаж:</div>
 			</div>
@@ -202,6 +205,7 @@ src="https://www.facebook.com/tr?id=694678950663471&ev=PageView&noscript=1"
 					<a href="https://vk.com/zao_zenit" class="soc-site__item icon-vk" target="_blank"></a>
 					<a href="https://www.facebook.com/zaozenit/" class="soc-site__item icon-fb" target="_blank"></a>
 					<a href="https://www.instagram.com/zao_zenit/" class="soc-site__item icon-inst" target="_blank"></a>
+					<a href="https://ok.ru/group/53047194615940" class="soc-site__item icon-ok" target="_blank"></a>
 				</div>
 			</div>
 			<div class="cols _fs__dorohovdesign-cols">
