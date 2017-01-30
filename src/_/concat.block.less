@@ -162,74 +162,6 @@
 	background: @white;
 	transition: all 0.3s ease;
 } 
-.form-site{
-}
-
-._frms__input{
-	&.icon{
-		position: relative;
-		&:before{
-			font-family: @icon;
-			position: absolute;
-			color: @blue;
-			top: 50%;
-			right: 15px;
-			font-size: 20px;
-			line-height: 20px;
-			transform: translateY(-50%);
-			transition: @transition-site;
-		}
-		&.icon-user:before{content: @icon-user;}
-		&.icon-tel:before{content: @icon-tel;}
-		._frms__form-control{
-			padding-right: 50px;
-		}
-		&.focus{
-			&:before{
-				color: @white;
-			}
-		}
-	}
-}
-._frms__input,
-._frms__textarea{margin-bottom: 27px;}
-
-._frms__form-control{
-	background:	none;
-	border: 2px solid @blue;    
-	height: 60px;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
-    font-size: @b-fs;
-	color: @black;
-	font-family: @open-sbold;
-	transition: @transition-site;
-    &::-moz-placeholder{
-		transition: @transition-site;
-		font-family: @open-light;
-		color: @blue;
-    }
-	&::-webkit-input-placeholder {
-		transition: @transition-site;
-		font-family: @open-light;
-		color: @blue;
-	}
-	&:focus{
-		background: @blue; 	
-		color: @white;
-		outline: none;
-	    &::-moz-placeholder{
-			color: @white;
-	    }
-		&::-webkit-input-placeholder {
-			color: @white;
-		}
-	}
-}
-textarea._frms__form-control{
-	height: 200px;
-	max-height: 200px;
-}
 .footer-site{
 	position: relative;
 	padding: 40px 0;
@@ -402,6 +334,74 @@ textarea._frms__form-control{
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+}
+.form-site{
+}
+
+._frms__input{
+	&.icon{
+		position: relative;
+		&:before{
+			font-family: @icon;
+			position: absolute;
+			color: @blue;
+			top: 50%;
+			right: 15px;
+			font-size: 20px;
+			line-height: 20px;
+			transform: translateY(-50%);
+			transition: @transition-site;
+		}
+		&.icon-user:before{content: @icon-user;}
+		&.icon-tel:before{content: @icon-tel;}
+		._frms__form-control{
+			padding-right: 50px;
+		}
+		&.focus{
+			&:before{
+				color: @white;
+			}
+		}
+	}
+}
+._frms__input,
+._frms__textarea{margin-bottom: 27px;}
+
+._frms__form-control{
+	background:	none;
+	border: 2px solid @blue;    
+	height: 60px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    font-size: @b-fs;
+	color: @black;
+	font-family: @open-sbold;
+	transition: @transition-site;
+    &::-moz-placeholder{
+		transition: @transition-site;
+		font-family: @open-light;
+		color: @blue;
+    }
+	&::-webkit-input-placeholder {
+		transition: @transition-site;
+		font-family: @open-light;
+		color: @blue;
+	}
+	&:focus{
+		background: @blue; 	
+		color: @white;
+		outline: none;
+	    &::-moz-placeholder{
+			color: @white;
+	    }
+		&::-webkit-input-placeholder {
+			color: @white;
+		}
+	}
+}
+textarea._frms__form-control{
+	height: 200px;
+	max-height: 200px;
 }
  //
 // Modals
