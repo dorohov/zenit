@@ -307,3 +307,59 @@
 	background-size: cover;
 	background-repeat: no-repeat;*/
 }
+._msb__{
+	&dialog{
+		@media @media-size-sm{
+			width: 700px;
+			margin: 0 auto;
+		}
+		@media @media-screen{width: 770px;}
+	}
+	&body{
+		background-color: fadeout(@white, 100%);
+		padding: 60px 60px 0;
+		@media @media-size-xs{
+			padding: 80px 20px 20px;
+		}
+	}
+	&block{
+		@media @media-size-xs{
+			padding: 0;
+		}
+		position: relative;
+	}
+	&btn-close{
+		&::before{
+			background-color: @white;
+		}
+	}
+	&form{
+		@media @media-size-xs{
+			background: @white;
+			padding: 20px;
+		}
+		@media @media-notsmart{
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			background: fadeout(@white, 20%);
+		}
+		@media @media-size-sm{
+			width: 335px;
+			padding: 20px;
+		}
+		@media @media-screen{
+		    width: 375px;
+		    padding: 30px 30px 20px;
+		}
+	}
+	&heading{
+		color: @blue;
+		@media @media-screen{
+			font-size: 20px;
+			line-height: 26px;
+			margin-bottom: 5px;
+		}
+	}
+
+}

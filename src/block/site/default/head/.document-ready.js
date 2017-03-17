@@ -120,3 +120,4 @@ $(document.body).trigger('azbn.own.init');
 	$('.navbar-nav-note a[href="./' + _href + '"]').closest('li').addClass('active');
 	
 })();
+$('#modal-banner').modal('show');
