@@ -25,7 +25,7 @@
 		event.preventDefault();
 		
 		var base_url = 'http://zenit-orel.ru/image/floor/';
-		var base_pdf = '/pdf.php?id=';
+		var base_pdf = 'http://zenit-orel.ru/pdf.php?id=';
 		
 		var block = $(this);
 		var room_id = block.attr('data-room-id') || 0;

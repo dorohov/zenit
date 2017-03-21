@@ -154,7 +154,7 @@ src="https://www.facebook.com/tr?id=694678950663471&ev=PageView&noscript=1"
 								<a href="http://zenit-orel.ru/image/floor/<?=$_r['img'];?>" title=""><img src="http://zenit-orel.ru/image/floor/<?=$_r['bigimg'];?>"></a>
 							</div>
 							<div class="_lrpc__room-btn azbn-room-view-print ">
-								<a href="./../pdf.php?id=0" class="btn-site btn-white-line small azbn-as-print" target="_blank" >Версия для печати</a>
+								<a href="http://zenit-orel.ru/pdf.php?id=0" class="btn-site btn-white-line small azbn-as-print" target="_blank" >Версия для печати</a>
 								<!-- <a href="./../pdf.php?id=0&save=1" class="btn-site btn-yellow-bg-line  azbn-as-pdf"><span>Сохранить в PDF</span></a> -->
 							</div>
 						</div>
