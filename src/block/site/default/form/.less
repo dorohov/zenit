@@ -30,35 +30,101 @@
 ._frms__input,
 ._frms__textarea{margin-bottom: 27px;}
 
-._frms__form-control{
-	background:	none;
-	border: 2px solid @blue;    
-	height: 60px;
-    padding: 10px 20px;
-    background-color: #f4f4f4;
-    font-size: @b-fs;
-	color: @black;
-	font-family: @open-sbold;
-	transition: @transition-site;
-    &::-moz-placeholder{
+._frms__{
+	&form-control{
+		background:	none;
+		border: 2px solid @blue;    
+		height: 60px;
+	    padding: 10px 20px;
+	    background-color: #f4f4f4;
+	    font-size: @b-fs;
+		color: @black;
+		font-family: @open-sbold;
 		transition: @transition-site;
-		font-family: @open-light;
-		color: @blue;
-    }
-	&::-webkit-input-placeholder {
-		transition: @transition-site;
-		font-family: @open-light;
-		color: @blue;
-	}
-	&:focus{
-		background: @blue; 	
-		color: @white;
-		outline: none;
 	    &::-moz-placeholder{
-			color: @white;
+			transition: @transition-site;
+			font-family: @open-light;
+			color: @blue;
 	    }
 		&::-webkit-input-placeholder {
+			transition: @transition-site;
+			font-family: @open-light;
+			color: @blue;
+		}
+		&:focus{
+			background: @blue; 	
 			color: @white;
+			outline: none;
+		    &::-moz-placeholder{
+				color: @white;
+		    }
+			&::-webkit-input-placeholder {
+				color: @white;
+			}
+		}
+	}
+		&agreement{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&agreement-checkbox{
+		width: 1px;
+		margin: 0;
+		visibility: hidden;
+		&:checked{
+			+ ._frms__agreement-label{
+				background: @blue;				
+				&::before,
+				&::after{background: @white}
+				&::before{
+					transform: rotate(45deg) translate(90%,230%) scale(0.6, 1)
+				}
+				&::after{
+					transform: rotate(-45deg) translate(-10%,560%);
+				}
+			}
+		}
+	}
+	&agreement-label{
+		display: inline-block;
+		width: 24px;
+		height: 24px;
+		border: 2px solid @blue;
+		position: relative;
+		transition: @transition-site;
+		margin-right: 15px;
+		background: @white;
+		@media @media-size-xs{margin-bottom: 10px;}
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			background: @blue;
+			top: 0;
+			left: 0;
+			transition: @transition-site;
+		}
+		&::before{
+			transform: rotate(45deg) translate(100%,100%);
+		}
+		&::after{
+			transform: rotate(-45deg) translate(-20%, 480%);
+		}
+	}
+	&agreement-text{
+		font-size: @b-fs;
+		line-height: @b-lh;
+		text-align: left;
+		a{
+			color: @blue;
+			border-bottom: 1px solid fadeout(@blue, 40%);
+			transition: @transition-site;
+			&:hover{
+				border-bottom-color: fadeout(@blue, 100%);
+			}
 		}
 	}
 }

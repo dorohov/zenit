@@ -1,5 +1,8 @@
 {
 	"profile":{
+		"domain_link":"http://roza-33.ru/",
+		"domain":"roza-33.ru",
+		"agreement_page":"agreement",
 		"email":"sales@zenit-orel.ru",
 		"phone":"+7 (4862) <span>44-50-60</span>",
 		"phone_tel":"+74862445060",
@@ -8,7 +11,6 @@
 		"vk":"https://vk.com/zao_zenit",
 		"fb":"https://www.facebook.com/zaozenit/",
 		"instagram":"https://www.instagram.com/zao_zenit/"
-
 	},
 	"house":{
 		"address":"ул. Розы Люксембург, д.33"
