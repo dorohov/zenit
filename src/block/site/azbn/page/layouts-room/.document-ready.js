@@ -24,8 +24,8 @@
 	$(document.body).on('click.azbn', 'map#floorMap area', {}, function(event){
 		event.preventDefault();
 		
-		var base_url = 'http://zenit-orel.ru/image/floor/';
-		var base_pdf = 'http://zenit-orel.ru/pdf.php?id=';
+		var base_url = 'http://old.zenit-orel.ru/image/floor/';
+		var base_pdf = 'http://old.zenit-orel.ru/pdf.php?id=';
 		
 		var block = $(this);
 		var room_id = block.attr('data-room-id') || 0;
@@ -34,7 +34,7 @@
 			/*
 			var room = {
 				id : 2278,
-				bigimg : '32/f5-17r1-sm.jpg', //http://zenit-orel.ru/image/floor/32/f5-17r12-sm.jpg
+				bigimg : '32/f5-17r1-sm.jpg', //http://old.zenit-orel.ru/image/floor/32/f5-17r12-sm.jpg
 				fullimg : '32/f5-17r1.jpg',
 				//text : 'Общая площадь с учетом лоджий и балконов: 73.53 м<sup>2</sup><br>Количество комнат: 2<br>Площадь комнат: 36.02 м<sup>2</sup><br>Площадь кухни: 14.33 м<sup>2</sup>',
 				//plan : '',

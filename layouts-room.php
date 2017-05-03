@@ -2,7 +2,7 @@
 
 //страница этажа
 
-require_once($base_url."../func.php");
+require_once("/home/h308278/zenit-orel.ru/docs/func.php");
 $l = db_connect();
 
 Header('Content-Type: text/html; charset=utf-8');

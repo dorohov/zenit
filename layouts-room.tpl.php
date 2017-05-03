@@ -128,8 +128,8 @@ src="https://www.facebook.com/tr?id=694678950663471&ev=PageView&noscript=1"
 							<div class="_lrpc__floor-inner"  data-mcs-theme="yellow" data-mcs-axis="x">
 								
 								<div id="apart" name="apart" class="_lrpc__floor-apart">
-									<div class="_lrpc__floor-box" style="background-image: url('http://zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>');" data-base-url="http://zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>" >
-	 									<img src="http://zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>" id="floorimg" usemap="#floorMap" style="position: absolute;">
+									<div class="_lrpc__floor-box" style="background-image: url('http://old.zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>');" data-base-url="http://old.zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>" >
+	 									<img src="http://old.zenit-orel.ru/image/floor/<?=$floor['bigimg'];?>" id="floorimg" usemap="#floorMap" style="position: absolute;">
 										<map class="imap" id="floorMap" name="floorMap" data-base-url="room.php?room_id=" ><!-- data-base-url="/json/content/room.json?room_id=" -->
 											<?
 											$_r = array();
@@ -137,7 +137,7 @@ src="https://www.facebook.com/tr?id=694678950663471&ev=PageView&noscript=1"
 												foreach($floor['rooms'] as $r) {
 													$_r = $r;
 											?>
-											<area href="#apart" shape="poly" coords="<?=$r['data']?>" data-room-id="<?=$r['id']?>" data-floor-img="http://zenit-orel.ru/image/floor/<?=$r['img']?>" >
+											<area href="#apart" shape="poly" coords="<?=$r['data']?>" data-room-id="<?=$r['id']?>" data-floor-img="http://old.zenit-orel.ru/image/floor/<?=$r['img']?>" >
 											<?
 												}
 											}
@@ -151,10 +151,10 @@ src="https://www.facebook.com/tr?id=694678950663471&ev=PageView&noscript=1"
 						</div>
 						<div class="cols _lrpc__room">
 							<div id="oneroom" class="_lrpc__oneroom azbn-room-view-img">
-								<a href="http://zenit-orel.ru/image/floor/<?=$_r['img'];?>" title=""><img src="http://zenit-orel.ru/image/floor/<?=$_r['bigimg'];?>"></a>
+								<a href="http://old.zenit-orel.ru/image/floor/<?=$_r['img'];?>" title=""><img src="http://old.zenit-orel.ru/image/floor/<?=$_r['bigimg'];?>"></a>
 							</div>
 							<div class="_lrpc__room-btn azbn-room-view-print ">
-								<a href="http://zenit-orel.ru/pdf.php?id=0" class="btn-site btn-white-line small azbn-as-print" target="_blank" >Версия для печати</a>
+								<a href="http://old.zenit-orel.ru/pdf.php?id=0" class="btn-site btn-white-line small azbn-as-print" target="_blank" >Версия для печати</a>
 								<!-- <a href="./../pdf.php?id=0&save=1" class="btn-site btn-yellow-bg-line  azbn-as-pdf"><span>Сохранить в PDF</span></a> -->
 							</div>
 						</div>
